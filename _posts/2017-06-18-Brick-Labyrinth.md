@@ -9,7 +9,7 @@ categories: brick
 
 <img src="{{site.url}}/assets/1702_brick_labyrinth/butressWall.gif" style="display: block; margin: auto;" />
 
-{% youtube UcwR0IJhJ-8 %}
+youtube UcwR0IJhJ-8
 
 <div class="video"> <figure> <iframe width="640" height="480" src="//youtu.be/UcwR0IJhJ-8" frameborder="0" allowfullscreen></iframe> </figure> </div>
 
