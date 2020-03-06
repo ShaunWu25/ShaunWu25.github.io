@@ -10,9 +10,12 @@ categories: brick
 
 The **Brick Labyrinth** is re-visiting one of the most archaic building techniques, dry-stacked brick walls, in a completely new setting. 
 
-For the first time, We used a multi-robotic gantry system in the [Robotic Fabrication Laboratory][Robotic-Fabrication-Laboratory] to build a full-scale architectural installation of a brick labyrinth. We used computational tools not only to iterate through designs but also to check the stability and feasibility of the produced structures and to generate the sequence and commands to control the multi-robotic fabrication of the final structure. Together with multiple iterations of physical tests and prototypes, this allowed us to design and build the labyrinth which consisted of over 10000 bricks with a weight of 30 tons in under 4 weeks.
+This project was a collective work within my master study in the ETH-Zurich Master of Advanced Studied(MAS) Program in Architecture and Digital Fabrication, academic year in 2016-2017. 
+There were 17 students divided into 4 groups of Design, Fabrication, Structure and Tooling. I was in the strucutre group, mainly resbonsible for developing an algorithm for stability check. 
 
 ![image](/assets/1702_brick_labyrinth/IMG_4425.JPG)
+
+For the first time, We used a multi-robotic gantry system in the [Robotic Fabrication Laboratory][Robotic-Fabrication-Laboratory] to build a full-scale architectural installation of a brick labyrinth. We used computational tools not only to iterate through designs but also to check the stability and feasibility of the produced structures and to generate the sequence and commands to control the multi-robotic fabrication of the final structure. Together with multiple iterations of physical tests and prototypes, this allowed us to design and build the labyrinth which consisted of over 10000 bricks with a weight of 30 tons in under 4 weeks.
 
 ![image](/assets/1702_brick_labyrinth/DSC_5324.JPG)
 
@@ -21,7 +24,7 @@ For the first time, We used a multi-robotic gantry system in the [Robotic Fabric
 <img src="{{site.url}}/assets/1702_brick_labyrinth/butressWall.gif" style="display: block; margin: auto;" />
 sequential stacking until collapsing occured in red bricks.
 <img src="{{site.url}}/assets/1702_brick_labyrinth/Stability-check-1.gif" style="display: block; margin: auto;" />
-stability check on overall inclined strucutre 
+stability check on overall inclined strucutre .
 
 
 ## Bond Transition
@@ -42,12 +45,12 @@ Honored to be featured in the latest issue of “igloo” in Romania. “Brick L
 
 
 
-----
-**Project Lead**: [Gramazio Kohler Research][GKR]
+-----
+**Project Lead**: [Gramazio Kohler Research, ETH-Zurich][GKR]
 
 **Tutors**: David Jenny, Luka Piskorec, Stefana Parascho, Hannes Mayer 
 
-**Students**: Rodrigo Díaz, Ahmed Elshafei, Marirena Kladeftira, Matteo Pacher, Sambit Samant, Iacovina Kontiza, Theodora Spathi, Marco Caprani, Hakim Hasan, Maria Pachi, Federico Giacomarra, Coralie Ming, Samuel Cros, Thodoris Kyttas, Wataru Nagatomo, Shaun Dai-Syuan Wu, Matthias Leschok
+**MAS Students 2016/17**: Rodrigo Díaz, Ahmed Elshafei, Marirena Kladeftira, Matteo Pacher, Sambit Samant, Iacovina Kontiza, Theodora Spathi, Marco Caprani, Hakim Hasan, Maria Pachi, Federico Giacomarra, Coralie Ming, Samuel Cros, Thodoris Kyttas, Wataru Nagatomo, Shaun Dai-Syuan Wu, Matthias Leschok
 
 **Sponsors and Collaborators**: Keller AG Ziegeleien 
 
