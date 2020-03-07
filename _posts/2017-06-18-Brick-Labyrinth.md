@@ -15,6 +15,8 @@ There were 17 students divided into 4 groups of Design, Fabrication, Structure a
 
 ![image](/assets/1702_brick_labyrinth/IMG_4425.JPG)
 
+![image](/assets/1702_brick_labyrinth/30.jpg) | ![image](/assets/1702_brick_labyrinth/62.jpg)
+
 For the first time, We used a multi-robotic gantry system in the [Robotic Fabrication Laboratory][Robotic-Fabrication-Laboratory] to build a full-scale architectural installation of a brick labyrinth. We used computational tools not only to iterate through designs but also to check the stability and feasibility of the produced structures and to generate the sequence and commands to control the multi-robotic fabrication of the final structure. Together with multiple iterations of physical tests and prototypes, this allowed us to design and build the labyrinth which consisted of over 10000 bricks with a weight of 30 tons in under 4 weeks.
 
 ![image](/assets/1702_brick_labyrinth/DSC_5324.JPG)
