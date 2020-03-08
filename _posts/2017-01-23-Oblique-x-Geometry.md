@@ -3,6 +3,7 @@ layout: post
 title:  "Oblique Geometry"
 date:   2017-01-23 02:55:49 +0100
 categories: 
+image: /assets/1701_oblique/05.jpg
 ---
 
 ![image](\assets\1701_oblique\05.jpg)

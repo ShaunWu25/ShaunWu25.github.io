@@ -3,6 +3,7 @@ layout: post
 title:  "Computational Strategies for Design and Assembly of Thin Folded Concrete Structures"
 date:   2017-09-20 02:55:49 +0100
 categories: 
+image: /assets/1709_folded_concrete/DSC_4397.jpg
 ---
 
 ![image](\assets\1709_folded_concrete\DSC_4397.jpg)

@@ -8,13 +8,13 @@ Hi there, this is Shaun.
 
 <img src="/assets/about/01.jpg" alt="good boy!" style="width:300px;height:300px;">
 
-This is my personal website, most of the contents here are related to computatonal design and digital fabrication, especially focusing on applying automation with robots and algorithms to Architecture, Engineering and Construction industries. 
+This is my personal website, most of the contents here are related to computatonal design and digital fabrication, especially focusing on applying automation by means of robots and algorithms in Architecture, Engineering and Construction industries. 
 
 If you want to know more about me with a bit of patience, then here you go:
 
 # About 
 
-吳岱軒, Shaun, Dai-Syuan Wu, architect, and computational design specialist, studied in Architecture at Tamkang University in Taiwan and worked in architectural firms. In 2016, He continued his studies at the ETH-Zürich in Switzerland, and was conferred Master of Advanced Studies in [Architecture and Digital Fabrication][MASDFab] program, supervised by the chair of [Gramazio Kohler Research][GKR], and collaborated with the chair of [Digital Building Technology][DBT] by Professor [Benjamin Dillenburger][BD].
+吳岱軒 or Shaun, Dai-Syuan Wu, architect, and computational design specialist, studied in Architecture at Tamkang University in Taiwan and worked in architectural firms. In 2016, He continued his studies at the ETH-Zürich in Switzerland, and was conferred Master of Advanced Studies in [Architecture and Digital Fabrication][MASDFab] program, supervised by the chair of [Gramazio Kohler Research][GKR], and collaborated with the chair of [Digital Building Technology][DBT] by Professor [Benjamin Dillenburger][BD].
 
 He masters complex geometry, specialising in the optimisation and rationalisation on non-standard geometry. He focuses on computational design and digital fabrication, implementing algorithmic programming procedures on Architecture, Engineering and Construction industry, which enables a systematic workflow from parametric design to BIM technology.
 
@@ -33,7 +33,7 @@ Interests/Specialities: Digital Fabrication, Programming, Structural Design, Arc
 -----
 
 # License
-The content for this site, including blog posts, images and other assets are covered under [CC-BY-SA][CBA].
+The contents for this site, including blog posts, images and other assets are covered under [CC-BY-SA][CBA].
 
 Last modified on Sunday, March 8th, 2020
 

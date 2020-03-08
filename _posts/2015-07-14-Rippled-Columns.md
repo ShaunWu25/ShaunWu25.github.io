@@ -3,6 +3,7 @@ layout: post
 title:  "Rippled Columns"
 date:   2015-07-14 02:55:49 +0100
 categories: 
+image: /assets/1507_Rippled_Columns/04.jpg
 ---
 
 ![image](/assets/1507_Rippled_Columns/02.jpg)
@@ -15,6 +16,8 @@ The workshop was divided into two stages. First, we introduced basic information
 ![image](/assets/1507_Rippled_Columns/01.jpg)
 
 In the second stage, participants were asked to develope their own logics to design a structural element, e.g. column, slab, wall. Fabricatiton was using pick and place method with small wooden blocks as fabrication material. UR5 robot was used and a vacuum system connected with compressor was developed with digital input/output integrated as picking force.
+
+![image](/assets/1507_Rippled_Columns/05.jpg)
 
 Our ripple columns were designed with pattern flowing on the surface. Each wooden block was placed at a slightly different angle to generate subtle transition as ripple. The challenge was to avoid collasping in the pick and place process.
 

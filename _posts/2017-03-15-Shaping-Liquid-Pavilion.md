@@ -3,6 +3,7 @@ layout: post
 title:  "Shaping Liquid Pavilion"
 date:   2017-03-15 02:55:49 +0100
 categories: 
+image: /assets/1705_liquid_metal/metal_001.jpg
 ---
 
 ![image](\assets\1705_liquid_metal\metal_001.jpg)
@@ -26,7 +27,7 @@ This is the first architectural structure made of hybrid cast metal and 3d print
 ----
 **Project Lead**: [Digital Building Technologies, ETH-Zurich][DBT]
 
-**Tutors**: Mania Aghaei Meibodi[MAE], Benjamin Dillenburger[BD], [Rena Giesecke][RG]
+**Tutors**: [Mania Aghaei Meibodi][MAE], [Benjamin Dillenburger][BD], [Rena Giesecke][RG]
 
 **MAS Students 2016/17**: Rodrigo Díaz, Ahmed Elshafei, Marirena Kladeftira, Matteo Pacher, Sambit Samant, Iacovina Kontiza, Theodora Spathi, Marco Caprani, Hakim Hasan, Maria Pachi, Federico Giacomarra, Coralie Ming, Samuel Cros, Thodoris Kyttas, Wataru Nagatomo, Shaun Dai-Syuan Wu, Matthias Leschok
 

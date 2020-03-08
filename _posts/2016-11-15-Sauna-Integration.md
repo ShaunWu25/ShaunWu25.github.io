@@ -3,6 +3,7 @@ layout: post
 title:  "Sauna Integration"
 date:   2016-11-15 02:55:49 +0100
 categories: 
+image: \assets\1611_Sauna_Integration\1.jpg
 ---
 
 ![image](/assets/1611_Sauna_Integration/1.jpg)

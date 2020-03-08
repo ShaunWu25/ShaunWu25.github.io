@@ -21,11 +21,10 @@
 title: ShaunWu
 email: shaunwu25@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Hi, most of the posts here are related to computational design and digital fabrication,
-  especially focusing on applying automation with robots and algorithms to Architecture, Engineering and Construction industries.
+  Computation x Fabrication
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://shaunwu25.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin: user-name-shaun-wu
+linkedin_username: shaun-wu
 github_username:  shaunwu25
 
 # Build settings
