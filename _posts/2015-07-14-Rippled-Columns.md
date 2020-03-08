@@ -10,7 +10,7 @@ categories:
 A robotic fabrication workshop was held in Architecure Department, Tamkang University, Taiwan. It was hosted by a group of researchers and students from CCC Research Lab.
 
 This workshop was meant to share and pass the knowledge from senior members to juniors, specifically focusing on digital design and digital fabrication.
-The workshop was divided into two stages. First, we introduced basic information for operating 6-axis robotic arm, including the typical movement(move L, move J), offline-programming, grasshopper tutorials and basic data structure implementation.
+The workshop was divided into two stages. First, we introduced basic information for operating 6-axis robotic arm, including the typical robot movements(move L, move J), offline-programming, grasshopper tutorials and basic data structure implementation.
 
 ![image](/assets/1507_Rippled_Columns/01.jpg)
 

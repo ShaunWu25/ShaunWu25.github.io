@@ -21,12 +21,11 @@
 title: ShaunWu
 email: shaunwu25@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Hi, most of the posts here are related to computational design and digital fabrication,
+  especially focusing on applying automation with robots and algorithms to Architecture, Engineering and Construction industries.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://shaunwu25.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-linkedin: shaun-wu
+linkedin: user-name-shaun-wu
 github_username:  shaunwu25
 
 # Build settings

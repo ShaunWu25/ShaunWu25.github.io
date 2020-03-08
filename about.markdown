@@ -4,15 +4,48 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hi there, this is Shaun.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+<img src="/assets/about/01.jpg" alt="good boy!" style="width:300px;height:300px;">
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+This is my personal website, most of the contents here are related to computatonal design and digital fabrication, especially focusing on applying automation with robots and algorithms to Architecture, Engineering and Construction industries. 
 
+If you want to know more about me with a bit of patience, then here you go:
 
-[jekyll-organization]: https://github.com/jekyll
+# About 
+
+吳岱軒, Shaun, Dai-Syuan Wu, architect, and computational design specialist, studied in Architecture at Tamkang University in Taiwan and worked in architectural firms. In 2016, He continued his studies at the ETH-Zürich in Switzerland, and was conferred Master of Advanced Studies in [Architecture and Digital Fabrication][MASDFab] program, supervised by the chair of [Gramazio Kohler Research][GKR], and collaborated with the chair of [Digital Building Technology][DBT] by Professor [Benjamin Dillenburger][BD].
+
+He masters complex geometry, specialising in the optimisation and rationalisation on non-standard geometry. He focuses on computational design and digital fabrication, implementing algorithmic programming procedures on Architecture, Engineering and Construction industry, which enables a systematic workflow from parametric design to BIM technology.
+
+In 2013, he worked as a researcher at the [Digital Design & Fabrication LAB (CCC Lab)][CCCLAB], Dept. of Architecture, Tamkang University under the supervision of Professor [Chen Chen-Cheng][CCC].
+
+Currently, he works at [Witteveen+Bos][WB] as a Computational Design Specialist within [Digital Construction Group][DCG] based in Singapore. He is involved in various innovative research programs and commercial projects related to large-scale 3D concrete printing and robotic applications.
+
+Interests/Specialities: Digital Fabrication, Programming, Structural Design, Architectural Design Research, Additive Manufacturing, 3D Concrete Printing, Robotic Application (ABB, KUKA, UR), Computational Design, Material Research, Complex Geometry Optimisation & Rationalisation. 
+
+-----
+
+# Follow
+* [LinkedIn][LI]
+* [GitHub][GH]
+
+-----
+
+# License
+The content for this site, including blog posts, images and other assets are covered under [CC-BY-SA][CBA].
+
+Last modified on Sunday, March 8th, 2020
+
+[MASDFab]: https://www.masdfab.com/
+[GKR]: https://gramaziokohler.arch.ethz.ch/web/e/forschung/index.html
+[DBT]: https://dbt.arch.ethz.ch/
+[BD]: https://dbt.arch.ethz.ch/team-member/benjamin-dillenburger/
+[CCC]: http://www.arch.tku.edu.tw/zh-tw/department/teachers/?recordId=245#prettyPhoto
+[CCCLAB]: https://www.facebook.com/digitalaieou/
+[WB]: https://www.witteveenbos.com/
+[DCG]: https://digitalconstruction.witteveenbos.com/
+[LI]: https://www.linkedin.com/in/shaun-wu/
+[GH]: https://github.com/ShaunWu25
+[CBA]: https://creativecommons.org/licenses/by-sa/4.0/
+
