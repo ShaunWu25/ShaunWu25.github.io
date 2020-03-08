@@ -4,11 +4,12 @@ title:  "Computational Strategies for Design and Assembly of Thin Folded Concret
 date:   2017-09-20 02:55:49 +0100
 categories: 
 image: /assets/1709_folded_concrete/DSC_4397.jpg
+tags: concrete, ETH
 ---
 
 ![image](\assets\1709_folded_concrete\DSC_4397.jpg)
 
-This post is about my master thesis studied in Master of Advanced Studies in architecture and digital fabrication, ETH-Zurich, Switzerland. 
+This post is about my master thesis studied in Master of Advanced Studies in architecture and digital fabrication, ETH-Zurich in Switzerland. 
 It aims to develop an innovative methodology by means of digital fabrication to constructure thin folded concrete structures in a static mold.
 
 [**Smart Dynamic Casting**][SDC](SDC) is a digital fabrication method that consists of a static or a dynamic formwork, which mounted on an industrial robot or a linear axis, as end-effector.
