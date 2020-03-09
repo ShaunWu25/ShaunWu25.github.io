@@ -4,6 +4,7 @@ title:  "Rippled Columns"
 date:   2015-07-14 02:55:49 +0100
 categories: 
 image: /assets/1507_Rippled_Columns/04.jpg
+tags: concrete, ETH
 ---
 
 ![image](/assets/1507_Rippled_Columns/02.jpg)

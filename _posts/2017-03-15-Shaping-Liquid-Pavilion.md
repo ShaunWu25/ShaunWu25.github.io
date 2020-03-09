@@ -4,6 +4,7 @@ title:  "Shaping Liquid Pavilion"
 date:   2017-03-15 02:55:49 +0100
 categories: 
 image: /assets/1705_liquid_metal/metal_001.jpg
+tags: concrete, ETH
 ---
 
 ![image](\assets\1705_liquid_metal\metal_001.jpg)
