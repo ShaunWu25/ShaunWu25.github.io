@@ -23,3 +23,12 @@ In the second stage, participants were asked to develope their own logics to des
 Our ripple columns were designed with pattern flowing on the surface. Each wooden block was placed at a slightly different angle to generate subtle transition as ripple. The challenge was to avoid collasping in the pick and place process.
 
 ![image](/assets/1507_Rippled_Columns/IMG_3474.JPG)
+
+-----
+**Project Lead**: [Digital Design & Fabrication LAB (CCC Lab)][CCCLAB]
+
+**Team**: Shaun Dai-Syuan Wu
+
+[CCCLAB]: https://www.facebook.com/digitalaieou/
+
+

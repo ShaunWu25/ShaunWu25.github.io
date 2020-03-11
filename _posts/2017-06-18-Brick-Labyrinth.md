@@ -12,8 +12,8 @@ tags: brick robotic-arm
 
 The **Brick Labyrinth** is re-visiting one of the most archaic building techniques, dry-stacked brick walls, in a completely new setting. 
 
-This project was a collective work within my master study in the ETH-Zurich Master of Advanced Studied(MAS) Program in Architecture and Digital Fabrication, academic year in 2016-2017. 
-There were 17 students divided into 4 groups of Design, Fabrication, Structure and Tooling. I was in the strucutre group, mainly resbonsible for developing an algorithm for stability check. 
+This project was a collective work within my master study in the ETH-Zurich Master of Advanced Studied(MAS) in Architecture and Digital Fabrication program, academic year in 2016-2017. 
+There were 17 students divided into 4 groups consisting of Design, Fabrication, Structure and Tooling. I was in the strucutre group, mainly resbonsible for developing an algorithm for stability check. 
 
 ![image](/assets/1702_brick_labyrinth/IMG_4425.JPG)
 
