@@ -27,7 +27,7 @@ Our ripple columns were designed with pattern flowing on the surface. Each woode
 -----
 **Project Lead**: [Digital Design & Fabrication LAB (CCC Lab)][CCCLAB]
 
-**Team**: Shaun Dai-Syuan Wu
+**Team**: Shaun Dai-Syuan Wu, Jie-Xin Zheng, Dong-xia Pan, Jie-An Wang Yan-Rong Chen, Rui-Zheng Yang
 
 [CCCLAB]: https://www.facebook.com/digitalaieou/
 
