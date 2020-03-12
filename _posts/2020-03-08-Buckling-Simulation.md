@@ -9,11 +9,11 @@ tags: concrete, Witteveen+Bos, Karamba, NTU
 
 ![image](/assets/2003_BucklingSimulation/200312_width.gif)
 
-3d concrete printing technology has opened up an new era for constrcution industry as a new approach to construct concrete structures with an advantage of elminiating the constraint of customising one-used formwork/mold on complex geometries.
+3d concrete printing technology has opened up an new era for constrcution industry as a new approach to construct concrete structures with an advantage of elminiating the need of customising one-used formwork/mold on non-standard geometries.
 
-One major **challenge** to 3d print fresh concrete in layer-based extrusion process is **buckling** and **collapsing** as there is no formwork or mold to supoort fresh concrete stay in shape. Here, we will focus on how to avoid buckling in 3d printing by means of [Finite Element Analysis][FEA] with [Karamba][KRB].
+One major **challenge** to 3d print fresh concrete in layer-based extrusion process is to overcome **buckling** and **collapsing** as there is no formwork or mold to support fresh concrete stay in place. Here, we will focus on how to avoid buckling in 3d printing by means of [Finite Element Analysis][FEA] using [Karamba][KRB].
 
-The term of **buckling** may sound academic, so to give you an idea what are we talking about here in graphic, please have a look at the gif below. It was supposed to print a straight wall, but it tumbled down as the fresh concrete was _NOT_ stiff enough to support the self-weight deposited on top.
+The term of **buckling** may sound academic, so to give you an idea what are we talking about here in graphic, please have a look at the video below. It was supposed to print a straight wall, but it tumbled down as the fresh concrete was _NOT_ stiff enough to support the self-weight deposited on top.
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/buckling.gif" style="display: block; margin: auto;" />
 
@@ -30,7 +30,12 @@ The 3d concrete printing reseach program in TU/Eindhoven university from Netherl
 1. [Early age mechanical behaviour of 3D printed concrete: Numerical modelling and experimenta; testing.][Ear]
 2. [Mechanical performance of wall structure in 3D printing process: theory, design tools and experiements.][AkSE] 
 
-As a benchmark, we used TU/E's setup including the type of material, the printing speed, the geometry and the layer height to compare with our buckling simulation result.
+As a benchmark, we used TU/E's setup to compare with our buckling simulation result. Setup as following:
+* Material: Weber Beamix 145-1
+* Weight: 2020 kg/m3
+* Printing speed: 5000 mm/min
+* Geometry: cylinder in radius 25cm
+* Layer height: 1cm
 
 ![image](/assets/2003_BucklingSimulation/stiffness-module.JPG) | ![image](/assets/2003_BucklingSimulation/compressive-yeild-strength.JPG)
 
@@ -54,11 +59,11 @@ for min in mins:
 aging = finalAging
 ```
 
-Upon the age of each layer, we can then acquire the acutal **young's module** and **compressive strength** of individual layer:
+Upon the age of each layer, we can then acquire the acutal **young's module** and **compressive strength** of individual layer, which are what we need as inputs for runing FEA in Karamba:
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/strengthDevelopment.JPG" style="display: block; margin: auto;" />
 
-Now we have all the ingredients we need, the next step is to parametrically develop a numerical model to automate the steps above.
+Now we have all the ingredients we need, next step is to parametrically develop a numerical model to automate the steps above.
 The benefit of the parametric modelling is that one don't have to rebuild repetitive tasks if the principle remains the same.
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/Karamba_SimpleWall.png" style="display: block; margin: auto;" />
@@ -69,16 +74,20 @@ Finally, we reach buckling simulation outcome.
 
 One may ask, how we can improve the process to avoid buckling occured? well, there are some factors we can work on:
 1. Print slower: slower you print, higher strength and stiffness are developed.
-2. Wideren print width: wider you print, more stable it will be.
-3. Adding internal strucutre.
-4. Avoid long stretch wall
+2. Widener print width: wider you print, more stable it will be.
+3. Add internal strucutre.
+4. Tweak material propertise, e.g. mixing cement accelerator.
 
-Here is quick example of how adding internal structure can help with minimising buckling compared to no internal structure.
+Here is quick example of how adding internal structures can help with minimising buckling compared to no internal structure.
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_Crossing.gif" style="display: block; margin: auto;" />
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_noCrossing.gif" style="display: block; margin: auto;" />
 
+[try][1]
 
+
+
+[1]:{{ site.url }}/assets/strengthDevelopment.JPG
 
 ----
 **In Collaboration With**: Witteveen+Bos, Karamba 3D, Nanyan Technology University
