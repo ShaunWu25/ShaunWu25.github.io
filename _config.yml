@@ -39,6 +39,9 @@ tag_feed_layout: tag_feed
 tag_feed_dir: tag
 tag_permalink_style: pretty
 
+# Google Analytics
+google_analytics: UA-160651058-1
+
 
 #tag_page_data:
 #  sitemap: false
