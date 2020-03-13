@@ -9,7 +9,7 @@ tags: concrete, Witteveen+Bos, Karamba, NTU
 
 ![image](/assets/2003_BucklingSimulation/200312_width.gif)
 
-3d concrete printing technology has opened up a new era for the construction industry as a new approach to construct concrete structures with an advantage of eliminating the need of customising one-used formwork/mold on non-standard geometries.
+3d concrete printing technology has opened up a new era for the construction industry as a new approach to construct concrete structures with an advantage of eliminating the need of customising one-used formwork/mold on non-standard geometries. [Witteveen+Bos][DCG] has been developing 3d concrete printing technology globally.
 
 One major **challenge** to 3d print fresh concrete in layer-based extrusion process is to overcome **buckling** and **collapsing** as there is no formwork or mold to support fresh concrete stay in shape. Here, we will focus on how to avoid buckling in 3d printing through [Finite Element Analysis][FEA] using [Karamba 3D][KRB].
 
