@@ -109,7 +109,7 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 
 **Personnel**: [Jordy Vos][JV], [Shaun Wu][SW], Clemens Preisinger, Matthew Tam, Nelson Xiong Neng
 
-**License**: [CC-BY-SA][CBA]
+**License**: [CC-BY-SA 4.0][CBA]
 
 [ST]:  https://en.wikipedia.org/wiki/Concrete_slump_test
 [FEA]: https://www.simscale.com/docs/content/simwiki/fea/whatisfea.html#:~:text=The%20Finite%20Element%20Analysis%20(FEA,to%20develop%20better%20products%2C%20faster.

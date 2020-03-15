@@ -33,7 +33,7 @@ Interests/Specialities: Digital Fabrication, Programming, Structural Design, Arc
 -----
 
 # License
-All the contents shared at **_shaunwu25.github.io_**, including blog posts, images, codes and other assets are licensed under [CC-BY-SA][CBA].
+All the contents shared at **_shaunwu25.github.io_**, including blog posts, images, codes and other assets are licensed under [CC-BY-SA 4.0][CBA].
 
 Last modified on Sunday, March 8th, 2020
 
