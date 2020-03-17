@@ -17,10 +17,9 @@ To give an idea of what **buckling** are we talking about here in graphic, pleas
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/buckling.gif" style="display: block; margin: auto;" />
 
-There are 3 stages shown in the process.
-1. **Onset of buckling**: subtle settlement occurred, structure failed in elastic buckling.
-2. **During buckling**: structure failed shifted to plastic buckling.
-3. **Collapsing**
+There are 2 stages shown in the process.
+1. **Onset of buckling**: subtle settlement occurred as buckling.
+2. **Collapsing**: structure failing.
 
 What we are going to do is numerically simulating **Onset of buckling** to avoid the subsequent two stages.
 
@@ -74,7 +73,7 @@ Finally, we reach buckling simulation outcomes.
 As reminders, there are a few things I want to point out for using Karamba in such simulations.
 1. Shell structure was selected as a cross-section element with a constant height. Karamba doesn't support volumetric elements.
 2. Spring cross-section was applied at the footing in order to define the stiffness relation over the buckling shapes.
-3. Karamba's calculations are based on the assumptions of small displacements in ratio of about 10% compared to cross-section's dimension.  
+3. Karamba's FEA calculations are based on the assumptions of small displacements in ratio of about 10% compared to cross-section's dimension.  
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_sequence.jpg" style="display: block; margin: auto;" />
 
