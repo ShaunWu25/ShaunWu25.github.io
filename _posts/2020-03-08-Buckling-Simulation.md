@@ -38,7 +38,7 @@ Setup as following:
 5. Layer height: 1cm
 
 ![image](/assets/2003_BucklingSimulation/stiffness-module.JPG) | ![image](/assets/2003_BucklingSimulation/compressive-yeild-strength.JPG)
-*courtesy: [TU/Eindhoven][TUE]* | *courtesy: [TU/Eindhoven][TUE]*
+*source: [TU/Eindhoven][TUE]* | *source: [TU/Eindhoven][TUE]*
 
 **Initial strength of fresh concrete** and **strength development of fresh concrete** are two important factors to determine the structural behaviour of the 3d printing process. It has a direct impact on setting time-dependent material properties, meaning the strength and stiffness of fresh concrete are developed along the curing time.
 
