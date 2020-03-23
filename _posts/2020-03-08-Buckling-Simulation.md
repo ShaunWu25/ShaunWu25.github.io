@@ -21,7 +21,7 @@ There are 2 stages shown in the process.
 1. **Onset of buckling**: subtle settlement occurred as buckling.
 2. **Collapsing**: structure failing.
 
-What we are going to do is numerically simulating **Onset of buckling** to avoid the subsequent two stages.
+What we are going to do is numerically simulating **Onset of buckling** to avoid the subsequent collapsing stage.
 
 This became an interesting topic that traditionally fresh concrete can be checked in [slump test][ST], which allows you to measure the workability of freshly made concrete. In contrast to 3d concrete printing applications, there are no such official tests can be referenced. Therefore, we simply proposed to consider fresh concrete as **soil**, and this is where geotechnical testing methods come in, which we are not going to discuss in detail.
 
