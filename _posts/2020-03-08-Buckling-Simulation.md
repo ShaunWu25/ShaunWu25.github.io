@@ -11,9 +11,9 @@ tags: concrete, Witteveen+Bos, Karamba, NTU
 
 3D concrete printing technology has opened up a new era for the construction industry as a new approach to manufacture concrete structures, with the advantage of eliminating the need of customising one-used formwork/mold on non-standard geometries. [Witteveen+Bos][DCG] has been developing and working on 3D concrete printing initiatives all around the world.
 
-One major **challenge** to 3D print with fresh concrete in layer-based extrusion process is to overcome **buckling** and **collapsing** during printing as there is no formwork or mold to support fresh concrete stay in shape. Here, we will focus on how to avoid buckling in 3d printing through [Finite Element Analysis][FEA] using [Karamba 3D][KRB].
+One major **challenge** to 3D print with fresh concrete in layer-based extrusion process is to overcome **buckling** and **collapsing** during printing as there is no formwork or mold to support fresh concrete stay in shape. Here, we will focus on how to avoid buckling in 3D printing through [Finite Element Analysis][FEA] using [Karamba 3D][KRB].
 
-There are two modes of potential failure in the 3D concrete printing process; **Elastic** and **Plastic** buckling. Elastic Buckling is about the structure bending and failing due to instability; Plastic Buckling is about exceeding the material's strength limit. Out of our physical experiments, plastic buckling is less likely to occur in the case of 3D concrete printing process as slim and tall geometry. In short, elastic buckling usually dominates the printing failure.
+There are two modes of potential failure in the 3D concrete printing process; **Elastic** and **Plastic** buckling. **Elastic Buckling** is about the structure bending and failing due to instability; **Plastic Buckling** is about exceeding the material's strength limit. Out of our physical experiments, plastic buckling is less likely to occur in the case of 3D concrete printing process as slim and tall geometry. In short, elastic buckling usually dominates the printing failure.
 
 To give an idea of what kind of **buckling** are dealing with, please have a look at the illustration below. The goal was to print a straight wall, but it tumbled down as the fresh concrete was _NOT_ stiff enough to support the self-weight deposited on top of each layer.
 
@@ -81,7 +81,7 @@ The benefit of parametric modelling is that one doesn't have to rebuild repetiti
 
 Finally, we reach buckling simulation outcomes.
 
-When looking at the above simulation results, the **maximum displacement** is our failure indicator since we focus on elastic buckling. For our simulations we assumed a maximum displacement limit is 1cm displacement, but this limit will be updated and verified in a later stage with physical experiments.
+When looking at the above simulation results, the **maximum displacement** is our failure indicator since we focus on elastic buckling. For our simulations we assumed a maximum displacement limit is **1cm** displacement, but this limit will be updated and verified in a later stage with physical experiments.
 
 There are a few things to point out for using Karamba in such simulations.
 1. A zero-thickness shell structure was selected as a cross-section element with a constant height applied. Karamba doesn't support volumetric elements, as such, the layer centre line needs to be used to generate the shell structure instead of the 3D layer geometry.
