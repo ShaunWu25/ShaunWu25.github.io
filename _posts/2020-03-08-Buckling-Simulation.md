@@ -15,7 +15,7 @@ One major **challenge** to 3D print with fresh concrete in layer-based extrusion
 
 There are two modes of potential failure in the 3D concrete printing process; **Elastic** and **Plastic** buckling. **Elastic Buckling** is about the structure bending and failing due to instability; **Plastic Buckling** is about exceeding the material's strength limit. Out of our physical experiments, plastic buckling is less likely to occur in the case of 3D concrete printing process as slim and tall geometry. In short, elastic buckling usually dominates the printing failure.
 
-To give an idea of what kind of **buckling** are dealing with, please have a look at the illustration below. The goal was to print a straight wall, but it tumbled down as the fresh concrete was _NOT_ stiff enough to support the self-weight deposited on top of each layer.
+To give an idea of what kind of **buckling** we are dealing with, please have a look at the illustration below. The goal was to print a straight wall, but it tumbled down as the fresh concrete was _NOT_ stiff enough to support the self-weight deposited on top of each layer.
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/buckling.gif" style="display: block; margin: auto;" />
 
