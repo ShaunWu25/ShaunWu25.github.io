@@ -9,44 +9,47 @@ tags: concrete, Witteveen+Bos, Karamba, NTU
 
 ![image](/assets/2003_BucklingSimulation/200312_width.gif)
 
-3d concrete printing technology has opened up a new era for the construction industry as a new approach to construct concrete structures with an advantage of eliminating the need of customising one-used formwork/mold on non-standard geometries. [Witteveen+Bos][DCG] has been developing 3d concrete printing technology globally.
+3D concrete printing technology has opened up a new era for the construction industry as a new approach to manufacture concrete structures, with the advantage of eliminating the need of customising one-used formwork/mold on non-standard geometries. [Witteveen+Bos][DCG] has been developing and working on 3D concrete printing initiatives all around the world.
 
-One major **challenge** to 3d print fresh concrete in layer-based extrusion process is to overcome **buckling** and **collapsing** as there is no formwork or mold to support fresh concrete stay in shape. Here, we will focus on how to avoid buckling in 3d printing through [Finite Element Analysis][FEA] using [Karamba 3D][KRB].
+One major **challenge** to 3D print with fresh concrete in layer-based extrusion process is to overcome **buckling** and **collapsing** during printing as there is no formwork or mold to support fresh concrete stay in shape. Here, we will focus on how to avoid buckling in 3D printing through [Finite Element Analysis][FEA] using [Karamba 3D][KRB].
 
-To give an idea of what **buckling** are we talking about here in graphic, please have a look at the gif below. It was supposed to print a straight wall, but it tumbled down as the fresh concrete was _NOT_ stiff enough to support the self-weight deposited on top.
+There are two modes of potential failure in the 3D concrete printing process; **Elastic** and **Plastic** buckling. **Elastic Buckling** is about the structure bending and failing due to instability; **Plastic Buckling** is about exceeding the material's strength limit. Out of our physical experiments, plastic buckling is less likely to occur in the case of 3D concrete printing process as slim and tall geometry. In short, elastic buckling usually dominates the printing failure.
+
+To give an idea of what kind of **buckling** we are dealing with, please have a look at the illustration below. The goal was to print a straight wall, but it tumbled down as the fresh concrete was _NOT_ stiff enough to support the self-weight deposited on top of each layer.
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/buckling.gif" style="display: block; margin: auto;" />
 
-There are 2 stages shown in the process.
+There are 2 stages shown in the buckling process.
 1. **Onset of buckling**: subtle settlement occurred as buckling.
 2. **Collapsing**: structure failing.
 
-What we are going to do is numerically simulating **Onset of buckling** to avoid the subsequent two stages.
+What we are going to do is numerically simulating **Onset of buckling** to avoid the subsequent collapsing stage.
 
-This became an interesting topic that traditionally fresh concrete can be checked in [slump test][ST], which allows you to measure the workability of freshly made concrete. In contrast to 3d concrete printing applications, there are no such official tests can be referenced. Therefore, we simply proposed to consider fresh concrete as **soil**, and this is where geotechnical testing methods come in, which we are not going to discuss in detail.
+This became an interesting topic because traditionally fresh concrete can be checked in [slump test][ST], which allows you to measure the workability of freshly made concrete. In contrast to 3D concrete printing applications, there are no such official tests available to predict the print performance of a mixture. However, alternatively, if we consider the fresh concrete as **soil**, we can make use of existing geotechnical testing methods, which we are not going to discuss here.
 
-The 3d concrete printing research program at [TU/Eindhoven][TUE] University, Netherland, has made fruitful research results for studying the structural behavior of 3d printed concrete elements. Two relevant papers published by TU/E can be found:
+The 3D concrete printing research program at [Eindhoven University of Technologies (TU/e)][TUE], has published their pioneering research results for studying the structural behaviour of 3D printed concrete elements. Two papers relevant to the earlier described buckling simulation tools are published by TU/e:
 1. [Early age mechanical behaviour of 3D printed concrete: Numerical modeling and experimental testing.][Ear]
 2. [Mechanical performance of wall structure in 3D printing process: theory, design tools and experiments.][AkSE] 
 
-As a benchmark, we used TU/E's setup to compare with our buckling simulation result. 
-Setup as following:
+To perform and verify the buckling simulation with our software, we used the following data from the above papers from TU/e.
+
 1. Material: Weber Beamix 145-1
 2. Printing Speed: 5000 mm/min
 3. Print width: 5cm
 4. Geometry: cylinder in radius 25cm
 5. Layer height: 1cm
+6. The following two graphs indicating early initial strength of fresh concrete and strength development;
 
 ![image](/assets/2003_BucklingSimulation/stiffness-module.JPG) | ![image](/assets/2003_BucklingSimulation/compressive-yeild-strength.JPG)
 *source: [TU/Eindhoven][TUE]* | *source: [TU/Eindhoven][TUE]*
 
-**Initial strength of fresh concrete** and **strength development of fresh concrete** are two important factors to determine the structural behaviour of the 3d printing process. It has a direct impact on setting time-dependent material properties, meaning the strength and stiffness of fresh concrete are developed along the curing time.
+**Initial strength of fresh concrete** and **strength development of fresh concrete** are two important factors to determine the structural behaviour during the 3D printing process. They both have a direct impact on the setting of time-dependent material properties. This means that the strength and stiffness of fresh concrete are increasing during the printing process.
 
-Based on the graphs above, we know:
+Based on the graphs above, we know the following early age properties of the fresh concrete:
 * **Stiffness Module**[MPa] = 0.0781 + 0.0012t
 * **Compressive Strength**[kPa] = 5.984 + 0.147t
 
-Depend on the print length of each layer and the printing speed, we can calculate what is the actual **age** of the individual layer:
+Based on the printing path length and the printing speed of each layer, we can calculate the actual **age** of each layer as follows:
 
 ```python
 finalAging= []
@@ -60,21 +63,15 @@ for min in mins:
 aging = finalAging
 ```
 
-Upon the age of each layer, we can then acquire the actual **young's module** and **compressive strength** of individual layer:
+With the age of each layer, we can acquire the actual **young's module** and **compressive strength** of each layer:
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/strengthDevelopment.JPG" style="display: block; margin: auto;" />
 
-Now we have all the ingredients we need, the next step is to parametrically develop a numerical model to automate the steps above.
-The benefit of parametric modelling is that one doesn't have to rebuild repetitive tasks if the principle remains the same.
+Now we know the properties of each layer, the next step is to parametrically develop a numerical model to automate the steps above.
+The benefit of parametric modelling is that one doesn't have to rebuild repetitive tasks for future applications, if the principle remains the same.
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/Karamba_SimpleWall.png" style="display: block; margin: auto;" />
 <img src="{{site.url}}/assets/2003_BucklingSimulation/karamba.JPG" style="display: block; margin: auto;" />
-
-Finally, we reach buckling simulation outcomes. 
-As reminders, there are a few things I want to point out for using Karamba in such simulations.
-1. Shell structure was selected as a cross-section element with a constant height. Karamba doesn't support volumetric elements.
-2. Spring cross-section was applied at the footing in order to define the stiffness relation over the buckling shapes.
-3. Karamba's FEA calculations are based on the assumptions of small displacements in ratio of about 10% compared to cross-section's dimension.  
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_sequence.jpg" style="display: block; margin: auto;" />
 
@@ -82,11 +79,20 @@ As reminders, there are a few things I want to point out for using Karamba in su
 ![image](/assets/2003_BucklingSimulation/internal_f02.gif) | ![image](/assets/2003_BucklingSimulation/internal_p02.gif) 
 ![image](/assets/2003_BucklingSimulation/dual_f02.gif) | ![image](/assets/2003_BucklingSimulation/dual_p02.gif)
 
-One may ask, how can we improve the process to avoid buckling occurred? well, there are some factors we can work on:
-1. Print slower: slower it prints, higher strength and stiffness are developed.
-2. Widen print width: wider it prints, more stable it will be.
+Finally, we reach buckling simulation outcomes.
+
+When looking at the above simulation results, the **maximum displacement** is our failure indicator since we focus on elastic buckling. For our simulations we assumed a maximum displacement limit is **1cm** displacement, but this limit will be updated and verified in a later stage with physical experiments.
+
+There are a few things to point out for using Karamba in such simulations.
+1. A zero-thickness shell structure was selected as a cross-section element with a constant height applied. Karamba doesn't support volumetric elements, as such, the layer centre line needs to be used to generate the shell structure instead of the 3D layer geometry.
+2. Spring cross-section was applied at the footing in order to define the stiffness relation over the buckling shapes.
+3. Karamba's FEA calculations are based on the assumptions of small displacements in a ratio of about 10% compared to cross-section's dimension (in this case: the cross-section of the print layer), as such, complete failure of the structure will not be visualised in the simulation
+
+One may ask, how can we improve the maximum printable height before elastic buckling occurs? Well, there are some factors we can work on:
+1. Print slower: slower it prints, higher strength and stiffness are developed during printing.
+2. Widen print layer width: wider it prints, more stable it will be.
 3. Add internal structure.
-4. Avoid long stretch wall.
+4. Avoid long straight walls.
 5. Tweak material properties, e.g. mixing cement accelerator.
 
 Here is a quick example of how adding internal structure can help with minimising buckling compared to no internal structure.
@@ -94,11 +100,11 @@ Here is a quick example of how adding internal structure can help with minimisin
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_Crossing.gif" style="display: block; margin: auto;" />
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_noCrossing.gif" style="display: block; margin: auto;" />
 
-To conclude, this buckling simulation can be used as a quick analytical tool, allowing you to digitally predict what would happen prior to the physical experiments. This not only minimise the chance of unnecessary trial and error but also give a better understanding of improving 3d concrete printing process. 
+To conclude, this buckling simulation can be used as a quick analytical tool, allowing you to digitally predict what would happen prior to the physical experiments. This not only minimise the chance of unnecessary trial and error but also give a better understanding of improving 3D concrete printing process. 
 
-The benefit of using Karamba3D in [Grasshopper][GH] environment in such simulation is that the computation duration is significantly reduced as it takes only a few seconds to calculate the buckling result with 35 layers attached.
+The benefit of using Karamba3D in [Grasshopper][GH] environment in such simulation is that the computation duration is significantly reduced as it takes a matter of seconds to calculate the results.
 
-Please contact me if you found interested in this tool: shaun.wu@witteveenbos.com
+Please contact me if you are interested in this tool: shaun.wu@witteveenbos.com
 
 **[Download Example File][file]** 
 
