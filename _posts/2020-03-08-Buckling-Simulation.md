@@ -122,7 +122,7 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 [HM]: https://www.food4rhino.com/app/human
 [DCG]: https://digitalconstruction.witteveenbos.com/
 [NTU]: https://www.ntu.edu.sg/Pages/home.aspx
-[JV]: https://www.linkedin.com/feed/
+[JV]: https://www.linkedin.com/in/jordy-vos/
 [SW]: https://www.linkedin.com/in/shaun-wu/
 [CBA]: https://creativecommons.org/licenses/by-sa/4.0/
 [NXN]: https://www.linkedin.com/in/neng-xiong-ab144137/
