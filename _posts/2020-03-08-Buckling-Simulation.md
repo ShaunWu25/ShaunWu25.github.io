@@ -113,7 +113,7 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 ----
 **In Collaboration With**: [Witteveen+Bos][DCG], [Karamba3D][KRB], [Nanyang Technological University][NTU]
 
-**Personnel**: [Jordy Vos][JV], [Shaun Wu][SW], Clemens Preisinger, Matthew Tam, [Nelson Xiong Neng][NXN]
+**Personnel**: [Jordy Vos][JV], [Shaun Wu][SW], [Clemens Preisinger][CP], [Matthew Tam][MT], [Nelson Xiong Neng][NXN]
 
 **License**: [CC-BY-SA 4.0][CBA]
 
@@ -130,6 +130,8 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 [NTU]: https://www.ntu.edu.sg/Pages/home.aspx
 [JV]: https://www.linkedin.com/in/jordy-vos/
 [SW]: https://www.linkedin.com/in/shaun-wu/
+[CP]: http://i-o-a.at/organisation/people/clemens-preisinger/
+[MT]: https://www.linkedin.com/in/matthew-tam-51453830/
 [CBA]: https://creativecommons.org/licenses/by-sa/4.0/
 [NXN]: https://www.linkedin.com/in/neng-xiong-ab144137/
 
