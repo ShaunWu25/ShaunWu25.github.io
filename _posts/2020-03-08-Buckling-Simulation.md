@@ -111,8 +111,8 @@ To validate our buckling simulation tool, we compare our outcomes with the paper
 1. Digitally compare with another commercially available FEA software [Abaqus][Aba].
 2. Physically compare with a 3D concrete printing experitment.
 
-![image](/assets/2003_BucklingSimulation/200504_Simulation_007.JPG)
-*Abques numeriacl result. source: [TU/Eindhoven][TUE]*
+![image](/assets/2003_BucklingSimulation/200504_Simulation_007.JPG) |
+*Abques numeriacl result. source: [TU/Eindhoven][TUE]* |
 
 ![image](/assets/2003_BucklingSimulation/Slide1.JPG)
 *Comparison between Karamba and Abaqus source: [TU/Eindhoven][TUE]*
