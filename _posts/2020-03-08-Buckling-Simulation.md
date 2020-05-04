@@ -9,6 +9,8 @@ tags: concrete, Witteveen+Bos, Karamba, NTU
 
 ![image](/assets/2003_BucklingSimulation/200312_width.gif)
 
+## Background Information
+
 3D concrete printing technology has opened up a new era for the construction industry as a new approach to manufacture concrete structures, with the advantage of eliminating the need of customising one-used formwork/mold on non-standard geometries. [Witteveen+Bos][DCG] has been developing and working on 3D concrete printing initiatives all around the world.
 
 One major **challenge** to 3D print with fresh concrete in layer-based extrusion process is to overcome **buckling** and **collapsing** during printing as there is no formwork or mold to support fresh concrete stay in shape. Here, we will focus on how to avoid buckling in 3D printing through [Finite Element Analysis][FEA] using [Karamba 3D][KRB].
@@ -31,6 +33,8 @@ The 3D concrete printing research program at [Eindhoven University of Technologi
 1. [Early age mechanical behaviour of 3D printed concrete: Numerical modeling and experimental testing.][Ear]
 2. [Mechanical performance of wall structure in 3D printing process: theory, design tools and experiments.][AkSE] 
 
+## Simulation inputs
+
 To perform and verify the buckling simulation with our software, we used the following data from the above papers from TU/e.
 
 1. Material: Weber Beamix 145-1
@@ -52,15 +56,14 @@ Based on the graphs above, we know the following early age properties of the fre
 Based on the printing path length and the printing speed of each layer, we can calculate the actual **age** of each layer as follows:
 
 ```python
-finalAging= []
+concreteAging= []
 for min in mins:
-    if len(finalAging) == 0:
-        finalAging.append(min)
+    if len(concreteAging) == 0:
+        concreteAging.append(min)
     else:
-        for i in range(len(finalAging)):
-            finalAging[i] += min
-        finalAging.append(min)
-aging = finalAging
+        for i in range(len(concreteAging)):
+            concreteAging[i] += min
+        concreteAging.append(min)
 ```
 
 With the age of each layer, we can acquire the actual **young's module** and **compressive strength** of each layer:
@@ -74,6 +77,8 @@ The benefit of parametric modelling is that one doesn't have to rebuild repetiti
 <img src="{{site.url}}/assets/2003_BucklingSimulation/karamba.JPG" style="display: block; margin: auto;" />
 
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_sequence.jpg" style="display: block; margin: auto;" />
+
+## Outcomes
 
 ![image](/assets/2003_BucklingSimulation/ring_f02.gif) | ![image](/assets/2003_BucklingSimulation/ring_p02.gif)
 ![image](/assets/2003_BucklingSimulation/internal_f02.gif) | ![image](/assets/2003_BucklingSimulation/internal_p02.gif) 
@@ -100,7 +105,25 @@ Here is a quick example of how adding internal structure can help with minimisin
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_Crossing.gif" style="display: block; margin: auto;" />
 <img src="{{site.url}}/assets/2003_BucklingSimulation/200312_noCrossing.gif" style="display: block; margin: auto;" />
 
+## Validation
+
+To validate our buckling simulation tool, we compare our outcomes with the papers from TU/e above. The comparison is made in two parts.
+1. Digitally compare with another commercially available FEA software [Abaqus][Aba].
+2. Physically compare with a 3D concrete printing experitment.
+
+![image](/assets/2003_BucklingSimulation/200504_Simulation_007.JPG)
+*Abques numeriacl result. source: [TU/Eindhoven][TUE]*
+
+![image](/assets/2003_BucklingSimulation/Slide1.JPG)
+*Comparison between Karamba and Abaqus source: [TU/Eindhoven][TUE]*
+
+The about image shows our the model in Karamba3D is with 12mm displacment(Horizontally), it is three times larger than Abauqs values in 4mm
+
+## Conclusion
+
 To conclude, this buckling simulation can be used as a quick analytical tool, allowing you to digitally predict what would happen prior to the physical experiments. This not only minimise the chance of unnecessary trial and error but also give a better understanding of improving 3D concrete printing process. 
+
+Upon the validation process, it seems the karamba model is slightly overestimate the strength and stiffness of the printed concrete structure. The difference might cause
 
 The benefit of using Karamba3D in [Grasshopper][GH] environment in such simulation is that the computation duration is significantly reduced as it takes a matter of seconds to calculate the results.
 
@@ -123,6 +146,7 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 [AkSE]: https://www.sciencedirect.com/science/article/pii/S0020740317330370?via%3Dihub
 [Ear]: https://www.sciencedirect.com/science/article/abs/pii/S000888461730532X?via%3Dihub
 [TUE]: https://www.youtube.com/channel/UCBdyr8bya4GMyAjB2CJcf7Q/feed
+[Aba]: https://www.simuleon.com/simulia-abaqus/
 [GH]: https://www.rhino3d.com/6/new/grasshopper
 [RH]: https://www.rhino3d.com/
 [HM]: https://www.food4rhino.com/app/human
@@ -134,6 +158,7 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 [MT]: https://www.linkedin.com/in/matthew-tam-51453830/
 [CBA]: https://creativecommons.org/licenses/by-sa/4.0/
 [NXN]: https://www.linkedin.com/in/neng-xiong-ab144137/
+
 
 [file]:{{ site.url }}/assets/2003_BucklingSimulation/200313_BucklingSimulation_SW.gh
 
