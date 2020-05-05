@@ -107,25 +107,41 @@ Here is a quick example of how adding internal structure can help with minimisin
 
 ## Validation
 
+![image](/assets/2003_BucklingSimulation/200505_001.gif)
+
 To validate our buckling simulation tool, we compare our outcomes with the papers from TU/e above. The comparison is made in two parts.
 1. Digitally compare with another commercially available FEA software [Abaqus][Aba].
-2. Physically compare with a 3D concrete printing experitment.
+2. Physically compare with a 3D concrete printing experiment.
 
 ![image](/assets/2003_BucklingSimulation/200504_Simulation_007.JPG) |
-*Abques numeriacl result. source: [TU/Eindhoven][TUE]* |
+*Abaqus numeriacl result. Gradient color indicates displacement. source: [TU/Eindhoven][TUE]* |
 
-![image](/assets/2003_BucklingSimulation/Slide1.JPG)
-*Comparison between Karamba and Abaqus source: [TU/Eindhoven][TUE]*
+![image](/assets/2003_BucklingSimulation/Slide1.JPG) | 
+*Comparison between Karamba and Abaqus in buckling shape. Right imgae source: [TU/Eindhoven][TUE]* |
 
-The about image shows our the model in Karamba3D is with 12mm displacment(Horizontally), it is three times larger than Abauqs values in 4mm
+The above image shows at the layer 32, Karamba model is having a maximum 12mm radial displacement, which is three times larger compared to the Abauqs value of 4mm.
+If we take one step back comparing at layer 20, it is Karamba 6.3mm versus Abaqus 2mm, the difference remains roughly three times larger to Abaqus.
+
+![image](/assets/2003_BucklingSimulation/200504_Simulation_008) |
+*Deformed shape of a cylinder during the printing process. source: [TU/Eindhoven][TUE]* |
+
+![image](/assets/2003_BucklingSimulation/200505_001.jpg) |
+*Comparison between Karamba and physical printing process in buckling shape. Right image source: [TU/Eindhoven][TUE]* |
+
+Next thing is to compare the Karamba model with the physical printing process.
+At layer 29, Karamba is showing a maximum 10mm radial displacement, which is smaller than the physical printing process of on average 15mm.
+
+These differences explain that both Karamba and Abaqus models overestimate the stability compare the physical printing process, but Karamba's results are significantly closer to the physical printing process.
+It was mentioned in the TU/e paper that the reason likely due to the compaction of homogeneous testing samples made for geotechnical testing methods, which typically does not apply to the actual printing process.
+As a result, the input of customised material properties for compacted concrete might be stronger than the printed concrete in terms of strength and stiffness.
 
 ## Conclusion
 
 To conclude, this buckling simulation can be used as a quick analytical tool, allowing you to digitally predict what would happen prior to the physical experiments. This not only minimise the chance of unnecessary trial and error but also give a better understanding of improving 3D concrete printing process. 
 
-Upon the validation process, it seems the karamba model is slightly overestimate the strength and stiffness of the printed concrete structure. The difference might cause
+Upon the validation process, it seems the Karamba models slightly overestimate the stability, the difference is approximately in control of 10mm, which is considered acceptable for the preliminary analytical tool.
 
-The benefit of using Karamba3D in [Grasshopper][GH] environment in such simulation is that the computation duration is significantly reduced as it takes a matter of seconds to calculate the results.
+The benefit of using Karamba3D in [Grasshopper][GH] environment in such simulation is that the computation time is significantly reduced as it takes a matter of seconds to calculate the results. The second benefit is that it provides designers to conduct comprehensive analysis within the design environment, eliminating the need of data transferring from one software to another, which often causes data loss during the transition process. Last but not the least, the tool is built in the parametrical process, we can reuse the script by simply inputting given geometries without the need to rebuild the numerical model from scratch again and again.
 
 Please contact me if you are interested in this tool: shaun.wu@witteveenbos.com
 
@@ -160,7 +176,7 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 [NXN]: https://www.linkedin.com/in/neng-xiong-ab144137/
 
 
-[file]:{{ site.url }}/assets/2003_BucklingSimulation/200313_BucklingSimulation_SW.gh
+[file]:{{ site.url }}/assets/2003_BucklingSimulation/200504_BucklingSimulation_SW.gh
 
 
 
