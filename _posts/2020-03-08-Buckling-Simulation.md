@@ -73,12 +73,12 @@ With the age of each layer, we can acquire the actual **young's module** and **c
 Now we know the properties of each layer, the next step is to parametrically develop a numerical model to automate the steps above.
 The benefit of parametric modelling is that one doesn't have to rebuild repetitive tasks for future applications, if the principle remains the same.
 
-<img src="{{site.url}}/assets/2003_BucklingSimulation/Karamba_SimpleWall.png" style="display: block; margin: auto;" />
+<img src="{{site.url}}/assets/2003_BucklingSimulation/simplified.png" style="display: block; margin: auto;" />
 <img src="{{site.url}}/assets/2003_BucklingSimulation/karamba.JPG" style="display: block; margin: auto;" />
 
-<img src="{{site.url}}/assets/2003_BucklingSimulation/200312_sequence.jpg" style="display: block; margin: auto;" />
-
 ## Outcomes
+
+<img src="{{site.url}}/assets/2003_BucklingSimulation/200312_sequence.jpg" style="display: block; margin: auto;" />
 
 ![image](/assets/2003_BucklingSimulation/ring_f02.gif) | ![image](/assets/2003_BucklingSimulation/ring_p02.gif)
 ![image](/assets/2003_BucklingSimulation/internal_f02.gif) | ![image](/assets/2003_BucklingSimulation/internal_p02.gif) 
