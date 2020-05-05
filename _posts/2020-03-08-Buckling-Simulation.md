@@ -122,7 +122,7 @@ To validate our buckling simulation tool, we compare our outcomes with the paper
 The above image shows at the layer 32, Karamba model is having a maximum 12mm radial displacement, which is three times larger compared to the Abauqs value of 4mm.
 If we take one step back comparing at layer 20, it is Karamba 6.3mm versus Abaqus 2mm, the difference remains roughly three times larger to Abaqus.
 
-![image](/assets/2003_BucklingSimulation/200504_Simulation_008) |
+![image](/assets/2003_BucklingSimulation/200504_Simulation_008.JPG) |
 *Deformed shape of a cylinder during the printing process. source: [TU/Eindhoven][TUE]* |
 
 ![image](/assets/2003_BucklingSimulation/200505_001.jpg) |
