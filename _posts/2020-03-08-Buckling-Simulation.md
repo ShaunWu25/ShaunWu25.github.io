@@ -109,15 +109,15 @@ Here is a quick example of how adding internal structure can help with minimisin
 
 ![image](/assets/2003_BucklingSimulation/200505_001.gif)
 
-To validate our buckling simulation tool, we compare our outcomes with the papers from TU/e above. The comparison is made in two parts.
+To validate our buckling simulation tool, we compare our Karamba outcomes with the papers from TU/e above. The comparison is made in two parts.
 1. Digitally compare with another commercially available FEA software [Abaqus][Aba].
 2. Physically compare with a 3D concrete printing experiment.
 
 ![image](/assets/2003_BucklingSimulation/200504_Simulation_007.JPG) |
-*Abaqus numeriacl result. Gradient color indicates displacement. source: [TU/Eindhoven][TUE]* |
+*Abaqus numeriacl result. Gradient color indicates radial displacement. source: [TU/Eindhoven][TUE]* |
 
 ![image](/assets/2003_BucklingSimulation/Slide1.JPG) | 
-*Comparison between Karamba and Abaqus in buckling shape. Right imgae source: [TU/Eindhoven][TUE]* |
+*Comparison between Karamba and Abaqus in buckling shape. Right image source: [TU/Eindhoven][TUE]* |
 
 The above image shows at the layer 32, Karamba model is having a maximum 12mm radial displacement, which is three times larger compared to the Abauqs value of 4mm.
 If we take one step back comparing at layer 20, it is Karamba 6.3mm versus Abaqus 2mm, the difference remains roughly three times larger to Abaqus.
