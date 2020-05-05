@@ -154,6 +154,8 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 
 **Personnel**: [Jordy Vos][JV], [Shaun Wu][SW], [Clemens Preisinger][CP], [Matthew Tam][MT], [Nelson Xiong Neng][NXN]
 
+**Personnel of Reference Source**: [Theo Salet][TS], [Rob Wolfs][RW]
+
 **License**: [CC-BY-SA 4.0][CBA]
 
 [ST]:  https://en.wikipedia.org/wiki/Concrete_slump_test
@@ -174,9 +176,11 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 [MT]: https://www.linkedin.com/in/matthew-tam-51453830/
 [CBA]: https://creativecommons.org/licenses/by-sa/4.0/
 [NXN]: https://www.linkedin.com/in/neng-xiong-ab144137/
+[TS]: https://www.tue.nl/en/research/researchers/theo-salet/
+[RW]: https://www.tue.nl/en/research/researchers/rob-wolfs/
 
 
-[file]:{{ site.url }}/assets/2003_BucklingSimulation/200504_BucklingSimulation_SW.gh
+[file]:{{ site.url }}/assets/2003_BucklingSimulation/200505_BucklingSimulation_SW.gh
 
 
 
