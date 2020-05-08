@@ -142,7 +142,7 @@ To conclude, this buckling simulation can be used as a quick analytical tool, al
 
 Upon the validation process, it seems the Karamba models slightly overestimate the stability, the difference is approximately in control of 10mm, which is considered acceptable for the preliminary analytical tool.
 
-The benefit of using Karamba3D in [Grasshopper][GH] environment in such simulation is that the computation time is significantly reduced as it takes a matter of seconds to calculate the results. The second benefit is that it provides designers to conduct comprehensive analysis within the design environment, eliminating the need of data transferring from one software to another, which often causes data loss during the transition process. Last but not the least, the tool is built in the parametrical process, we can reuse the script by simply inputting given geometries without the need to rebuild the numerical model from scratch again and again.
+The benefit of using Karamba3D in [Grasshopper][GH] environment in such simulation is that the computation time is significantly reduced as it takes a matter of seconds to calculate the results. The second benefit is that it provides designers to conduct comprehensive analysis within the design environment, eliminating the need of data transferring from one software to another, which often causes data loss during the transition process. Last but not least, the tool is built in the parametrical process, we can reuse the script by simply inputting given geometries without the need to rebuild the numerical model from scratch again and again.
 
 Please contact me if you are interested in this tool: shaun.wu@witteveenbos.com
 
