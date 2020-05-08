@@ -8,6 +8,7 @@ tags: concrete, Witteveen+Bos, Karamba, NTU
 ---
 
 ![image](/assets/2003_BucklingSimulation/200312_width.gif)
+![image](/assets/2003_BucklingSimulation/featured-image.JPG)
 
 ## Background Information
 
@@ -73,7 +74,7 @@ With the age of each layer, we can acquire the actual **young's module** and **c
 Now we know the properties of each layer, the next step is to parametrically develop a numerical model to automate the steps above.
 The benefit of parametric modelling is that one doesn't have to rebuild repetitive tasks for future applications, if the principle remains the same.
 
-<img src="{{site.url}}/assets/2003_BucklingSimulation/simplified.png" style="display: block; margin: auto;" />
+<img src="{{site.url}}/assets/2003_BucklingSimulation/karamba.png" style="display: block; margin: auto;" />
 <img src="{{site.url}}/assets/2003_BucklingSimulation/karamba.JPG" style="display: block; margin: auto;" />
 
 ## Outcomes
@@ -180,7 +181,7 @@ Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 [RW]: https://www.tue.nl/en/research/researchers/rob-wolfs/
 
 
-[file]:{{ site.url }}/assets/2003_BucklingSimulation/200505_BucklingSimulation_SW.gh
+[file]:{{ site.url }}/assets/2003_BucklingSimulation/200505_BucklingSimulation_Karamba3d.gh
 
 
 
