@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Programming in Multi-Axis Gantry Robot for 3D Printing in Construction"
-date:   2020-03-09 02:55:49 +0100
+date:   2019-06-15 02:55:49 +0100
 categories: 
 image: /assets/1906_Gantry_Robot/3d-printer.jpg
 tags: concrete, Witteveen+Bos, HDB, robotic
