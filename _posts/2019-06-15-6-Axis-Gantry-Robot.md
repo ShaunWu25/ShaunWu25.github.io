@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Programming in multi-axis Gantry Robot for 3D Printing in Construction"
+title:  "Programming in Multi-Axis Gantry Robot for 3D Printing in Construction"
 date:   2020-03-09 02:55:49 +0100
 categories: 
 image: /assets/1906_Gantry_Robot/3d-printer.jpg
