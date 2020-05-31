@@ -60,7 +60,8 @@ Digital workflow of the Witteveen+Bos Robot
 ----
 
 **Developer**: [Shaun Wu][SW]
-**Client**: [Housing Developement Board[HDB], Singapore
+
+**Client**: [Housing Developement Board][HDB], Singapore
 
 [HDB]: https://www.hdb.gov.sg/cs/infoweb/homepage
 [CBR]: https://www.hdb.gov.sg/cs/infoweb/about-us/our-role/centre-of-building-research-page
