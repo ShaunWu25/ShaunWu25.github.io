@@ -8,8 +8,9 @@ tags: concrete, Witteveen+Bos, HDB, robotic
 ---
 
 ![image](/assets/1906_Gantry_Robot/3d-printer.jpg)
-![image](/assets/1906_Gantry_Robot/Picture2.jpg) |
-*Concrete Printing in action* |
+
+| ![image](/assets/1906_Gantry_Robot/Picture2.jpg) |
+| *Concrete Printing in action* |
 
 ## Whar is Witteveen+Bos Robot?
 
@@ -24,8 +25,8 @@ Witteveen+Bos Robot is completely written in [C#][c] programming language in [.N
 
 The generated robot codes can be loaded directly on the robot controllers, such as [G-Code][GC] for [Siemens Sinumerik][SS], [Rapid][RA] for [ABB][ABB] robotic arm, [KUKA robot language][KR] for [KUKA][KK] robotic arm.
 
-![image](/assets/1906_Gantry_Robot/Picture12.jpg) | ![image](/assets/1906_Gantry_Robot/ezgif.com-video-to-gif.gif) 
-*Three linear-axis in gantry system* | *Three rotary-axis in gantry system*
+![image](/assets/1906_Gantry_Robot/Picture12.jpg) | ![image](/assets/1906_Gantry_Robot/ezgif.com-video-to-gif.gif) |
+*Three linear-axis in gantry system* | *Three rotary-axis in gantry system* |
 
 Witteveen+Bos Robot standardised three different printing strategies. The different printing strategies utilises the unique 6-axis movements of 3D-concrete printing system. The supported printing strategies are as follows:
 1.	Vertical Printing.
@@ -33,17 +34,17 @@ Witteveen+Bos Robot standardised three different printing strategies. The differ
 3.	On-Surface Printing.
 
 ## Vertical Printing
-![image](/assets/1906_Gantry_Robot/Picture6.jpg) | ![image](/assets/1906_Gantry_Robot/Picture5.jpg)
+![image](/assets/1906_Gantry_Robot/Picture6.jpg) | ![image](/assets/1906_Gantry_Robot/Picture5.jpg) |
 
 Vertical printing strategy, the printhead and nozzle is always perpendicular to the ground and printed object. The nozzle is rotated following along with the tangent of the print path.
 
 ## Tangential Printing
-![image](/assets/1906_Gantry_Robot/Picture8.jpg) | ![image](/assets/1906_Gantry_Robot/Picture7.jpg)
+![image](/assets/1906_Gantry_Robot/Picture8.jpg) | ![image](/assets/1906_Gantry_Robot/Picture7.jpg) |
 
 Tangential printing, meaning the printhead and nozzle is always following the curvature of printed object. Compare to the vertiacl printing strategy, the tangentail printing stategy has full-bond between the concrete layers for the curve objects. The structure integraty will not be compromised.
 
 ## On-Surface Printing
-![image](/assets/1906_Gantry_Robot/Picture10.jpg) | ![image](/assets/1906_Gantry_Robot/on-surface.gif)
+![image](/assets/1906_Gantry_Robot/Picture10.jpg) | ![image](/assets/1906_Gantry_Robot/on-surface.gif) |
 
 On-surface printing allows us to print on a double-curved surface, the print head is following the surface at all time, and the nozzle is following the tangent of the print path.
 
