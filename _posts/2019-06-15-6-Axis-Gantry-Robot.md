@@ -35,7 +35,8 @@ Witteveen+Bos Robot standardised three different printing strategies. The differ
 
 ## Vertical Printing
 
-![image](/assets/1906_Gantry_Robot/Picture6.jpg) | ![image](/assets/1906_Gantry_Robot/Picture5.jpg)
+![image](/assets/1906_Gantry_Robot/Picture6.jpg) | ![image](/assets/1906_Gantry_Robot/Picture5.jpg =125x)
+
 
 Vertical printing strategy, the printhead and nozzle is always perpendicular to the ground and printed object. The nozzle is rotated following along with the tangent of the print path.
 
