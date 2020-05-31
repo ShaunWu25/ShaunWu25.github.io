@@ -4,7 +4,7 @@ title:  "Buckling Simulation for 3D Printing in Fresh Concrete"
 date:   2020-03-09 02:55:49 +0100
 categories: 
 image: /assets/2003_BucklingSimulation/Cover.JPG
-tags: concrete, Witteveen+Bos, Karamba, NTU
+tags: concrete, Witteveen+Bos, Karamba, FEM
 ---
 
 ![image](/assets/2003_BucklingSimulation/200312_width.gif)
