@@ -16,7 +16,7 @@ tags: concrete, Witteveen+Bos, HDB, robotic
 
 **Witteveen+Bos Robot** is a Rhinoceros3D/Grasshopper plugin for programming multi-axis gantry robots with a focus on 3D concrete printing. It provides a seamless workflow from design to fabrication with full flexibilities and adaptabilities in a user-friendly matter. It consists of custom built-in components that facilitat the planning and execution of the robotic fabrication process embedded in the parametric design environment.
 
-Witteveen+Bos robot has been used as a software solution by Singapore governmental agency, [Housing Development Board][HDB] in the [Center of Building Research][CBR] to conduct full-scale concrete printing technology for future generations of public housing in Singapore. 
+Witteveen+Bos robot has been chosen as a software solution by Singapore governmental agency, [Housing Development Board][HDB] in the [Center of Building Research][CBR] to conduct full-scale concrete printing technology for future generations of public housing in Singapore. 
 
 ![image](/assets/1906_Gantry_Robot/Picture11.jpg) | ![image](/assets/1906_Gantry_Robot/190725_reference.JPG)
 
