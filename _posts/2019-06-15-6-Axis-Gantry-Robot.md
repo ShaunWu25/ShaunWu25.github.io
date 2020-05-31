@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Programming in multi-axis Gantry Robot for 3D Printing in Fresh Concrete"
+title:  "Programming in multi-axis Gantry Robot for 3D Printing in Construction"
 date:   2020-03-09 02:55:49 +0100
 categories: 
 image: /assets/1906_Gantry_Robot/3d-printer.jpg
@@ -54,12 +54,13 @@ Tangential printing, meaning the printhead and nozzle are always following the c
 
 On-surface printing strategy allows us to print on a double-curved surface, the print head is following the surface normal at all time, and the nozzle is following the tangent of the print path 3-dimensionally.
 
-<div class="video"> <figure> <iframe width="640" height="480" src="https://www.youtube.com/embed/-eJUiO6xcKE" frameborder="0" allowfullscreen></iframe> </figure> </div> |
-*Digital workflow of the Witteveen+Bos Robot* |
+<div class="video"> <figure> <iframe width="640" height="480" src="https://www.youtube.com/embed/-eJUiO6xcKE" frameborder="0" allowfullscreen></iframe> </figure> </div>
+Digital workflow of the Witteveen+Bos Robot
 
 ----
 
 **Developer**: [Shaun Wu][SW]
+**Client**: [Housing Developement Board[HDB], Singapore
 
 [HDB]: https://www.hdb.gov.sg/cs/infoweb/homepage
 [CBR]: https://www.hdb.gov.sg/cs/infoweb/about-us/our-role/centre-of-building-research-page
