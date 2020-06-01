@@ -20,7 +20,7 @@ He masters complex geometry, specialising in the optimisation and rationalisatio
 
 In 2013, he worked as a researcher at the [Digital Design & Fabrication LAB (CCC Lab)][CCCLAB], Dept. of Architecture, Tamkang University under the supervision of Professor [Chen Chen-Cheng][CCC].
 
-Currently, he works at [Witteveen+Bos][WB] as a Computational Design Specialist within [Digital Construction Group][DCG] based in Singapore. He is involved in various innovative research programs and commercial projects related to large-scale 3D concrete printing and robotic applications.
+Currently, he works at [Witteveen+Bos][WB] as a Computational Design Specialist within [Digital Construction Group][DCG] based in Singapore. He is responsible to develop advanced computational methonds for robotics, structural analysis, and form-finding designs. He is involved in various innovative research programs and commercial projects related to large-scale 3D concrete printing and robotic applications.
 
 Interests/Specialities: Digital Fabrication, Programming, Structural Design, Architectural Design Research, Additive Manufacturing, 3D Concrete Printing, Robotic Application (ABB, KUKA, UR), Computational Design, Material Research, Complex Geometry Optimisation & Rationalisation. 
 
