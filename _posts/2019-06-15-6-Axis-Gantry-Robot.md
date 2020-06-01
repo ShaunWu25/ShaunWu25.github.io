@@ -65,7 +65,7 @@ Digital workflow of the Witteveen+Bos Robot
 
 **Clients**: [Housing Development Board][HDB], [Ministry of National Development][MND]
 
-**Programme**: [Cities of Tomorrow][CoT], Research and Development Programme
+**Programme**: [Cities of Tomorrow][CoT], Research and Development Programme in Advanced Construction
 
 [HDB]: https://www.hdb.gov.sg/cs/infoweb/homepage
 [CBR]: https://www.hdb.gov.sg/cs/infoweb/about-us/our-role/centre-of-building-research-page
