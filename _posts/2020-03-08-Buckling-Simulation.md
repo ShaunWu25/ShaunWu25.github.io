@@ -150,6 +150,10 @@ Please contact me if you are interested in this tool: shaun.wu@witteveenbos.com
 
 Software requirements: [Rhino6][RH], [Karamba3D][KRB], [Human][HM]
 
+I was honored to be invited by Karamba3D team for sharing our 3D Concrete Printing Development over an online webinar, and an introduction of buckling simulation tool was included.
+
+<div class="video"> <figure> <iframe width="640" height="480" src="https://www.youtube.com/embed/CoKHuM_n9cg" frameborder="0" allowfullscreen></iframe> </figure> </div>
+
 ----
 **In Collaboration With**: [Witteveen+Bos][DCG], [Karamba3D][KRB], [Nanyang Technological University][NTU]
 
