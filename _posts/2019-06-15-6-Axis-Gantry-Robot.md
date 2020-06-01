@@ -9,7 +9,7 @@ tags: concrete, Witteveen+Bos, HDB, robotic
 
 [![image](/assets/1906_Gantry_Robot/3d-printer.jpg)](/assets/1906_Gantry_Robot/3d-printer.jpg)
 
-| ![image](/assets/1906_Gantry_Robot/Picture2.jpg) |
+| [![image](/assets/1906_Gantry_Robot/Picture2.jpg)](/assets/1906_Gantry_Robot/Picture2.jpg) |
 | *Concrete Printing in action* |
 
 ## What is Witteveen+Bos Robot?
