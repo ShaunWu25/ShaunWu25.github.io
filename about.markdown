@@ -24,6 +24,8 @@ Currently, he works at [Witteveen+Bos][WB] as a Computational Design Specialist 
 
 Interests/Specialities: Digital Fabrication, Programming, Structural Design, Architectural Design Research, Additive Manufacturing, 3D Concrete Printing, Robotic Application (ABB, KUKA, UR), Computational Design, Material Research, Complex Geometry Optimisation & Rationalisation. 
 
+[CV][cv]
+
 -----
 
 # Follow
@@ -49,3 +51,4 @@ Last modified on Sunday, March 8th, 2020
 [GH]: https://github.com/ShaunWu25
 [CBA]: https://creativecommons.org/licenses/by-sa/4.0/
 
+[cv]:{{ site.url }}/assets/about/CV_ShaunWu.pdf
