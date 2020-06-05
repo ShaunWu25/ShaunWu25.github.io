@@ -24,13 +24,12 @@ Currently, he works at [Witteveen+Bos][WB] as a Computational Design Specialist 
 
 Interests/Specialities: Digital Fabrication, Programming, Structural Design, Architectural Design Research, Additive Manufacturing, 3D Concrete Printing, Robotic Application (ABB, KUKA, UR), Computational Design, Material Research, Complex Geometry Optimisation & Rationalisation. 
 
-[CV][cv]
-
 -----
 
 # Follow
 * [LinkedIn][LI]
 * [GitHub][GH]
+# [CV][cv]
 
 -----
 
