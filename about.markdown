@@ -29,7 +29,7 @@ Interests/Specialities: Digital Fabrication, Programming, Structural Design, Arc
 # Follow
 * [LinkedIn][LI]
 * [GitHub][GH]
-# [CV][cv]
+* [CV][cv]
 
 -----
 
