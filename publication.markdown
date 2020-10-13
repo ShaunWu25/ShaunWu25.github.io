@@ -26,10 +26,14 @@ Exhibition/ [Shanghai Urban Space Art Season][SUSAS] 2017 / 上海城市空間�
 
 [![image](/assets/publication/SUSASoct15_3month.jpg)](/assets/publication/SUSASoct15_3month.jpg)
 
+# Robotic labyrinth in brick
+Aug 2017
+Article/ [Igloo][ILOO]
 
-
+[![image](/assets/publication/igloo.jpg)](/assets/publication/igloo.jpg)
 
 
 [CPT]: https://www.cpt-worldwide.com/
 [KABA]: https://www.karamba3d.com/webinar/15-may-2020-3dprintconcrete/
 [SUSAS]: http://www.susas.com.cn/2017susas/index.html
+[ILOO]: https://www.igloo.ro/igloo-179-parametricism-si-reprezentare/
