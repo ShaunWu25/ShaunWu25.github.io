@@ -74,12 +74,12 @@ Now let's make one step further by adding a bit complexity for a spring simulati
 
 <img src="{{site.url}}/assets/2011_ParticleSystem/201112_bouncing balll.gif" style="display: block; margin: auto;" height="500" />
 
-Single spring simulation will have two additional forces compared to our previous falling ball simulation:
+Single spring simulation has two additional forces compared to our previous falling ball simulation:
 1. Spring Force (Force = Spring Constant * Δ L(Length - Rest Length)): <br />
-It is widely known as [Hooke's Law][HL] that a force is exerted if a spring is compressed or extended in relation with its rest length. Rest length means the length of spring in a state of equilibrium. The value of Spring Constant depends on the type of spring we applied which can be a reasonable arbitary none zero value for our simulation.
+It is widely known as [Hooke's Law][HL] that a force is exerted if an elasitc spring is compressed or extended in relation with its rest length. Rest length means the length of spring in a state of equilibrium without any force exerted on it. The value of the spring constant represents the stiffness of the spring which can be a reasonable arbitary none zero value for our simulation.
 
 2. Damping Force (Force = Damping Constant * Particle's Velocity): <br />
-Damping force is always remained opposite to the direction of the spring force. It is the force to slow dowm the particle's motion by associating with particle's velocity. Similar to Spring Constant, Damping constant is a arbitary value.
+Damping force is always remained opposite to the direction of the spring force. It is the force to slow dowm the particle's motion by associating with particle's velocity. Without the damping force, our system will not reach to an equilibrium, the dynamic particle will keep bocuning forth and back indefinitely. You can try to set the damping constant to 0 to see the motion. Similar to the spring constant, damping constant is a arbitary value.
 
 In addition, we will add one more particle(particle 1) at the origin as our anchoring point which remains constantly static without being affected by any forces. Particle 2 will be the falling ball particle with a spring connected to particle 1. Below is a diagram that illustrates how three forces interact with each other. 
 
@@ -135,10 +135,180 @@ private void RunScript(bool button, double mass, double gravity, double spring, 
   // </Custom additional code> 
 ```
 
+## Two Springs Simulation
 
+<img src="{{site.url}}/assets/2011_ParticleSystem/201116_two springs.gif" style="display: block; margin: auto;" height="500" />
 
+Next step we will add one additional dynamic particle(particle 3) with a spring connected to the particle 2. We will first examine the force diagram to see what forces act on each dynamic particles and formulate the force structure accordingly.
 
+<img src="{{site.url}}/assets/2011_ParticleSystem/1116_01.JPG" style="display: block; margin: auto;" height="400" />
 
+We first look at the force diagram for the particle 2 that it has one gravity force from its own weight and a spring force plus a damping force that are associated with the static particle 1. In addition, a newly created particle 3 is connected with a spring below the particle 2 which exert one additional spring force and a damping force.<br />
+
+It is clear now that the number of forces act on the particle is linked to the particle's connectivity. Among the three particles in this simulation, the particle 2 has 2 connectivities with the static particle 1 and a dynamic particle 3 below it. The others two particles remains simple with 1 connectivity.
+
+<img src="{{site.url}}/assets/2011_ParticleSystem/1116_02.JPG" style="display: block; margin: auto;" height="400" />
+
+Just like our previous single spring simulation, the particle 3 is only associated with the particle 2, so the force diagram is the same to the previous force diagram for the particle 2.
+
+<img src="{{site.url}}/assets/2011_ParticleSystem/201116_01.png" style="display: block; margin: auto;" height="300" />
+
+```c#
+private void RunScript(bool button, double mass_01, double mass_02, double gravity, double k, double damping, Point3d anchorPt, Point3d StartingPt_01, Point3d StartingPt_02, ref object Position01, ref object Position02, ref object Velocity01, ref object Velocity02)
+  {
+    if(button)
+    {
+      pt_1 = StartingPt_01;
+      pt_2 = StartingPt_02;
+
+      velocity_01 = Vector3d.Zero;
+      velocity_02 = Vector3d.Zero;
+    }
+    else
+    {
+      Tuple<Point3d, Point3d, Vector3d, Vector3d> compute = physic_engine(pt_1, pt_2, mass_01, mass_02, gravity, velocity_01, velocity_02, damping, anchorPt, k);
+
+      pt_1 = compute.Item1;
+      pt_2 = compute.Item2;
+
+      velocity_01 = compute.Item3;
+      velocity_02 = compute.Item4;
+
+    }
+    Position01 = pt_1;
+    Position02 = pt_2;
+    Velocity01 = velocity_01;
+    Velocity02 = velocity_02;
+  }
+
+  // <Custom additional code> 
+  Point3d pt_1 = new Point3d(0, 0, 0);
+  Point3d pt_2 = new Point3d(0, 0, 0);
+
+  Vector3d velocity_01 = new Vector3d(0, 0, 0);
+  Vector3d velocity_02 = new Vector3d(0, 0, 0);
+
+  Tuple<Point3d, Point3d, Vector3d, Vector3d> physic_engine (Point3d pt_1, Point3d pt_2, double mass_01, double mass_02, double gravity, Vector3d velocity_01, Vector3d velocity_02, double damping, Point3d anchorPt, double k)
+  {
+    // spring force for the particle 2
+    double forceSpring_Z_01 = -k * (pt_1.Z - anchorPt.Z);
+    double forceSpring_Y_01 = -k * (pt_1.Y - anchorPt.Y);
+    double forceSpring_X_01 = -k * (pt_1.X - anchorPt.X);
+    // spring force for the particle 3
+    double forceSpring_Z_02 = -k * (pt_2.Z - pt_1.Z);
+    double forceSpring_Y_02 = -k * (pt_2.Y - pt_1.Y);
+    double forceSpring_X_02 = -k * (pt_2.X - pt_1.X);
+
+    // damping force for the particle 2
+    double forceDamping_Z_01 = damping * velocity_01.Z;
+    double forceDamping_Y_01 = damping * velocity_01.Y;
+    double forceDamping_X_01 = damping * velocity_01.X;
+    // damping force for the particle 3
+    double forceDamping_Z_02 = damping * velocity_02.Z;
+    double forceDamping_Y_02 = damping * velocity_02.Y;
+    double forceDamping_X_02 = damping * velocity_02.X;
+
+    // gravity force for the particle 2
+    double forceGravity_01 = mass_01 * gravity;
+    // gravity force for the particle 3
+    double forceGravity_02 = mass_02 * gravity;
+
+    // calculatie the individual force for particle 2
+    double forceZ_01 = forceSpring_Z_01 - forceDamping_Z_01 - forceSpring_Z_02 + forceDamping_Z_02 - forceGravity_01;
+    double forceY_01 = forceSpring_Y_01 - forceDamping_Y_01 - forceSpring_Y_02 + forceDamping_Y_02;
+    double forceX_01 = forceSpring_X_01 - forceDamping_X_01 - forceSpring_X_02 + forceDamping_X_02;
+    // calculatie the individual force for particle 3
+    double forceZ_02 = forceSpring_Z_02 - forceDamping_Z_02 - forceGravity_01;
+    double forceY_02 = forceSpring_Y_02 - forceDamping_Y_02;
+    double forceX_02 = forceSpring_X_02 - forceDamping_X_02;
+
+    // calculate the acceleration of the particle 2
+    Vector3d acceleration_Z_01 = new Vector3d(forceX_01 / mass_01, forceY_01 / mass_01, forceZ_01 / mass_01);
+    // calculate the acceleration of the particle 3
+    Vector3d acceleration_Z_02 = new Vector3d(forceX_02 / mass_02, forceY_02 / mass_02, forceZ_02 / mass_02);
+
+    Vector3d velocity_01_current = (velocity_01 + acceleration_Z_01);
+    Vector3d velocity_02_current = (velocity_02 + acceleration_Z_02);
+
+    Point3d pt_01_current = pt_1 + velocity_01_current;
+    Point3d pt_02_current = pt_2 + velocity_02_current;
+
+    return Tuple.Create(pt_01_current, pt_02_current, velocity_01_current, velocity_02_current);
+  }
+```
+
+The code is getting longer because we basically need to double up the calculation for the extra particle involved. As you can see it is not the best practice because if we have 10 more particles involved in the system, then the code will be easily 10 times longer. To solve this issue, we will make use of [Object-Oriented Programming][OOP] to better maintain our code structure.
+
+## Treating Particle as Object
+Earlier we mentioned every particle has it's own set of attributes, which we can make use of it by establishing a particle class that we associate these attributes with every particle we generate. Nn the later stage, we can easily extract these information whenever we update its position, velocity, etc. At this point, what we care for each particle are:
+1. Position
+2. Velocity
+3. Status: Is it static or dynamic.
+4. Mass
+
+```c#
+public class Particle
+    {
+        public Point3d Position;
+        public Vector3d Velocity;
+        public int Status;
+        public double Mass;
+
+        public Particle(Point3d initialPosition, Vector3d initialVelocity, double mass, int particleStatus)
+        {
+            Position = initialPosition;
+            Velocity = initialVelocity;
+            Status = particleStatus;
+            Mass = mass;
+        }
+    }
+```
+
+## Searching Connectivity
+In our two springs simulation, we can clearly see the connectivity of each particle because there are simply three particles involved in the system. To tackle more complicated connectivity like a cable nets structure, we will make a utility function to search the connectivity of each particle. The function will iterate every spring we feed in, look for the particles from the start and end point of the spring, store the particle in the list if they are not duplicate to the stored list, then build the connectivity by the particle's index.
+
+```c#
+Tuple<List<Point3d>, DataTree<int>> SearchConnectivity(List<Curve> curves)
+    {
+        List<Point3d> myPts = new List<Point3d>();
+        DataTree<int> connectivity = new DataTree<int>();
+        for (int i = 0; i < curves.Count; i++)
+        {
+            Point3d startPt = curves[i].PointAtStart;
+            Point3d endPt = curves[i].PointAtEnd;
+
+            if (i == 0)
+            {
+                myPts.Add(endPt);
+                myPts.Add(startPt);
+
+                connectivity.Add(myPts.IndexOf(endPt), new GH_Path(myPts.IndexOf(startPt)));
+                connectivity.Add(myPts.IndexOf(startPt), new GH_Path(myPts.IndexOf(endPt)));
+            }
+            else
+            {
+                if (myPts.Contains(startPt) && myPts.Contains(endPt))
+                {
+                    connectivity.Add(myPts.IndexOf(endPt), new GH_Path(myPts.IndexOf(startPt)));
+                    connectivity.Add(myPts.IndexOf(startPt), new GH_Path(myPts.IndexOf(endPt)));
+                }
+                else if (myPts.Contains(startPt))
+                {
+                    myPts.Add(endPt);
+                    connectivity.Add(myPts.IndexOf(endPt), new GH_Path(myPts.IndexOf(startPt)));
+                    connectivity.Add(myPts.IndexOf(startPt), new GH_Path(myPts.IndexOf(endPt)));
+                }
+                else if (myPts.Contains(endPt))
+                {
+                    myPts.Add(startPt);
+                    connectivity.Add(myPts.IndexOf(endPt), new GH_Path(myPts.IndexOf(startPt)));
+                    connectivity.Add(myPts.IndexOf(startPt), new GH_Path(myPts.IndexOf(endPt)));
+                }
+            }
+        }
+        return Tuple.Create(myPts, connectivity);
+    }
+```
 
 
 
@@ -148,4 +318,4 @@ private void RunScript(bool button, double mass, double gravity, double spring, 
 [FH]: https://www.food4rhino.com/app/flexhopper
 [PH]: https://www.food4rhino.com/app/physxgh
 [HL]: https://en.wikipedia.org/wiki/Hooke%27s_law
-
+[OOP]: https://en.wikipedia.org/wiki/Object-oriented_programming#:~:text=Object%2Doriented%20programming%20(OOP),(often%20known%20as%20methods).
