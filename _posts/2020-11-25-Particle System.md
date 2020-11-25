@@ -191,27 +191,27 @@ private void RunScript(bool button, double mass_01, double mass_02, double gravi
 
   Tuple<Point3d, Point3d, Vector3d, Vector3d> physic_engine (Point3d pt_1, Point3d pt_2, double mass_01, double mass_02, double gravity, Vector3d velocity_01, Vector3d velocity_02, double damping, Point3d anchorPt, double k)
   {
-    // spring force for the particle 2
+    // spring force for particle 2
     double forceSpring_Z_01 = -k * (pt_1.Z - anchorPt.Z);
     double forceSpring_Y_01 = -k * (pt_1.Y - anchorPt.Y);
     double forceSpring_X_01 = -k * (pt_1.X - anchorPt.X);
-    // spring force for the particle 3
+    // spring force for particle 3
     double forceSpring_Z_02 = -k * (pt_2.Z - pt_1.Z);
     double forceSpring_Y_02 = -k * (pt_2.Y - pt_1.Y);
     double forceSpring_X_02 = -k * (pt_2.X - pt_1.X);
 
-    // damping force for the particle 2
+    // damping force for particle 2
     double forceDamping_Z_01 = damping * velocity_01.Z;
     double forceDamping_Y_01 = damping * velocity_01.Y;
     double forceDamping_X_01 = damping * velocity_01.X;
-    // damping force for the particle 3
+    // damping force for particle 3
     double forceDamping_Z_02 = damping * velocity_02.Z;
     double forceDamping_Y_02 = damping * velocity_02.Y;
     double forceDamping_X_02 = damping * velocity_02.X;
 
-    // gravity force for the particle 2
+    // gravity force for particle 2
     double forceGravity_01 = mass_01 * gravity;
-    // gravity force for the particle 3
+    // gravity force for particle 3
     double forceGravity_02 = mass_02 * gravity;
 
     // calculatie the individual force for particle 2
@@ -223,9 +223,9 @@ private void RunScript(bool button, double mass_01, double mass_02, double gravi
     double forceY_02 = forceSpring_Y_02 - forceDamping_Y_02;
     double forceX_02 = forceSpring_X_02 - forceDamping_X_02;
 
-    // calculate the acceleration of the particle 2
+    // calculate the acceleration of particle 2
     Vector3d acceleration_Z_01 = new Vector3d(forceX_01 / mass_01, forceY_01 / mass_01, forceZ_01 / mass_01);
-    // calculate the acceleration of the particle 3
+    // calculate the acceleration of particle 3
     Vector3d acceleration_Z_02 = new Vector3d(forceX_02 / mass_02, forceY_02 / mass_02, forceZ_02 / mass_02);
 
     Vector3d velocity_01_current = (velocity_01 + acceleration_Z_01);
