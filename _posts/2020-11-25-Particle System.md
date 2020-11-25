@@ -6,9 +6,6 @@ categories:
 image: /assets/2011_ParticleSystem/Frame_00029.bmp
 tags: 
 ---
-
-Particle system
-
 ![image](/assets/2011_ParticleSystem/201109_01.gif) | ![image](/assets/2011_ParticleSystem/201109_02.gif)
 
 I recently started to explore particle system. It is surprising that it only requires high school knowledge in physics to build up such a tool.
@@ -83,9 +80,9 @@ Single spring simulation has two additional forces compared to our previous fall
 It is widely known as [Hooke's Law][HL] that a force is exerted if an elastic spring is compressed or extended in relation to its rest length. Rest length means the length of spring in a state of equilibrium without any force exerted on it. The value of the spring constant represents the stiffness of the spring which can be a reasonable arbitrary non-zero value for our simulation.
 
 2. Damping Force (Force = Damping Constant * Particle's Velocity): <br />
-Damping force always remains opposite to the direction of the spring force. It is the force to slow down the particle's motion by associating with the particle's velocity. One can imagaine a ping pong ball falling verticallly on a table, the ping pong ball won't bounce back as high as the position it was released as it loses certain energy when it contact the table. Without the damping force, our system will not reach equilibrium, the dynamic particle will keep bouncing forth and back indefinitely. You can try to set the damping constant to 0 to see the non-stop bouncing motion. Similar to the spring constant, the damping constant is an arbitrary non-zero value.
+The damping force always remains opposite to the direction of the spring force. It is the force to slow down the particle's motion by associating with the particle's velocity. One can imagine a ping pong ball falling vertically on a table, the ping pong ball won't bounce back as high as the position it was released as it loses certain energy when it contacts the table. Without the damping force, our system will not reach equilibrium, the dynamic particle will keep bouncing forth and back indefinitely. You can try to set the damping constant to 0 to see the non-stop bouncing motion. Similar to the spring constant, the damping constant is an arbitrary non-zero value.
 
-In addition, we will add one more particle(particle 1) at the origin as our anchoring point which remains constantly static without being affected by any forces. Particle 2 will be the falling ball particle with a spring connected to particle 1. Below is a diagram that illustrates how three forces interact with each other. 
+In addition, we will add one more particle(particle 1) at the origin as our anchoring point which remains constantly static without being affected by any forces. Particle 2 will be the falling ball particle with a spring connected to particle 1. Below is a force diagram that illustrates how three forces interact with each other. 
 
 <img src="{{site.url}}/assets/2011_ParticleSystem/1112_01.JPG" style="display: block; margin: auto;" height="400" />
 
@@ -147,7 +144,7 @@ Next step we will add one additional dynamic particle(particle 3) with a spring 
 
 <img src="{{site.url}}/assets/2011_ParticleSystem/1116_01.JPG" style="display: block; margin: auto;" height="400" />
 
-We first look at the force diagram for particle 2 of which has one gravity force from its own weight and a pair of spring force, damping force that are associated with the static particle 1. In addition, a newly created particle 3 is connected with a spring below particle 2 which exerts one additional spring force and a damping force.<br />
+We first look at the force diagram for particle 2 of which has one gravity force from its own weight and a pair of spring force, damping force that are associated with the static particle 1. In addition, a newly created particle 3 is connected with a spring below particle 2 which exerts one additional pair of spring force/damping force.<br />
 
 It is clear now that the number of forces act on the particle is linked to the particle's connectivity. Among the three particles in this simulation, particle 2 has 2 connectivities with the static particle 1 and a dynamic particle 3 below it. The other two particles remain simple with 1 connectivity.
 
@@ -241,7 +238,7 @@ private void RunScript(bool button, double mass_01, double mass_02, double gravi
   }
 ```
 
-The code is getting longer because we basically need to double up the calculation for the extra particle involved. It is not the best practice because if we have 10 more particles involved in the system, the code will be easily 10 times longer. To solve this issue, we will make use of [Object-Oriented Programming][OOP] to better maintain our code structure.
+The code is getting longer because we basically need to double up the formulation for the extra particle involved. It is not the best practice because if we have 10 more particles involved in the system, the code will be easily 10 times longer. To solve this issue, we will make use of [Object-Oriented Programming][OOP] to better maintain our code structure.
 
 ## Treating Particle as Object
 Earlier we mentioned every particle has its own set of attributes, which we can make use of it by establishing a Particle class that we associate these attributes with every particle we generate. In the later stage, we can easily extract this information whenever we update its position, velocity, etc. At this point, each particle has:
@@ -534,7 +531,7 @@ private void RunScript(List<Curve> curves, List<Point3d> anchorPts, double mass,
 
 ![image](/assets/2011_ParticleSystem/201117_02.gif) | ![image](/assets/2011_ParticleSystem/201117_01.gif)
 
-This kind of concludes the underlying principle of particle system. There are plenty of interesting applications that can be further developed based on particle system logic. One example in th architectural application is planarisation when it comes to panalise complex surfaces, which commonly having difficulty to fabricate doubly curved facade panels out of low-stretchable materials, such as wood or glass. 
+This kind of concludes the underlying principle of particle system. There are plenty of interesting applications that can be further developed based on particle system logic. One example in th architectural application is planarisation when it comes to panalise complex surfaces, which commonly having difficulty to fabricate doubly curved facade panels out of low-stretchable materials, such as timber or glass. 
  
 
 [RH]: https://www.rhino3d.com/
