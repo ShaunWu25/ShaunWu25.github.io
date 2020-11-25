@@ -29,7 +29,7 @@ Particle can be described as a localised object. Each particle has its own set o
 ## Falling ball simulation
 <img src="{{site.url}}/assets/2011_ParticleSystem/201110_Falling ball.gif" style="display: block; margin: auto;" height="300" />
 
-Particle is moved toward a direction by a given or a set of force acts on it. We will start by simulating a single particle or a falling ball and observe how the particle responds to its own weight. Gravity, in this case, will be the only force that act on the ball. To calculate the force acts on the ball by gravity, we will borrow Newton's laws of motion *(F = m a)*.   
+Particle is moved toward a direction by a given or a set of force acts on it. We will start by simulating a single particle or a falling ball and observe how the particle responds to its own weight. Gravity, in this case, will be the only force that act on the ball. To calculate the force acts on the ball by gravity, we will borrow Newton's laws of motion *(Force = mass * acceleration)*.  
 <img src="{{site.url}}/assets/2011_ParticleSystem/201110_02.png" style="display: block; margin: auto;" height="200" />
 
 ```c#
@@ -76,10 +76,10 @@ Now let's take one step further by adding a bit of complexity for a spring simul
 <img src="{{site.url}}/assets/2011_ParticleSystem/201112_bouncing balll.gif" style="display: block; margin: auto;" height="500" />
 
 Single spring simulation has two additional forces compared to our previous falling ball simulation:
-1. Spring Force (Force = Spring Constant * Δ L(Length - Rest Length)): <br />
+1. *Spring Force* (Force = Spring Constant * Δ L(Length - Rest Length)): <br />
 It is widely known as [Hooke's Law][HL] that a force is exerted if an elastic spring is compressed or extended in relation to its rest length. Rest length means the length of spring in a state of equilibrium without any force exerted on it. The value of the spring constant represents the stiffness of the spring which can be a reasonable arbitrary non-zero value for our simulation.
 
-2. Damping Force (Force = Damping Constant * Particle's Velocity): <br />
+2. *Damping Force* (Force = Damping Constant * Particle's Velocity): <br />
 The damping force always remains opposite to the direction of the spring force. It is the force to slow down the particle's motion by associating with the particle's velocity. One can imagine a ping pong ball falling vertically on a table, the ping pong ball won't bounce back as high as the position it was released as it loses certain energy when it contacts the table. Without the damping force, our system will not reach equilibrium, the dynamic particle will keep bouncing forth and back indefinitely. You can try to set the damping constant to 0 to see the non-stop bouncing motion. Similar to the spring constant, the damping constant is an arbitrary non-zero value.
 
 In addition, we will add one more particle(particle 1) at the origin as our anchoring point which remains constantly static without being affected by any forces. Particle 2 will be the falling ball particle with a spring connected to particle 1. Below is a force diagram that illustrates how three forces interact with each other. 
@@ -392,14 +392,14 @@ public class PhysicEngineProcessor
     }
 ```
 
-Within the PhysicEngineProcessor class, we will process the particle's position and velocity according to their force diagram that we described earlier. Notice that we do not update the particles in this function. What we do here is storing what need to be updated in the current state. Subsequently, we will update all the particles as a whole in the next **Update** function. 
+Within the PhysicEngineProcessor class, we will compute the particle's position and velocity according to their force diagram that we described earlier. Notice that we do not update the particles in this function. What we do here is storing what need to be updated in the current state. Subsequently, we will update all the particles as a whole in the next **Update** function. 
 
 ```c#
 public void Process()
         {
             tempVelocities = new List<Vector3d>();
             tempPositions = new List<Point3d>();
-            int currentIteration = 0;
+            int particleIndex = 0;
 
             foreach (Particle particle in Particles)
             {
@@ -407,7 +407,7 @@ public void Process()
                 {
                     tempVelocities.Add(Vector3d.Zero);
                     tempPositions.Add(particle.Position);
-                    currentIteration++;
+                    particleIndex++;
                     continue;
                 } 
                 else 
@@ -425,9 +425,9 @@ public void Process()
                     // gravity force
                     double forceGravity = particle.Mass * Gravity;
                     
-                    for (int i = 0; i < Connectivity.Branch(currentIteration).Count; i++)
+                    for (int i = 0; i < Connectivity.Branch(particleIndex).Count; i++)
                     {
-                        Particle connectedParticle = Particles[Connectivity.Branch(currentIteration)[i]];
+                        Particle connectedParticle = Particles[Connectivity.Branch(particleIndex)[i]];
                         // spring force
                         forceSpring_Z  += SpringConstant * (particle.Position.Z - connectedParticle.Position.Z) * (-1);
                         forceSpring_Y  += SpringConstant * (particle.Position.Y - connectedParticle.Position.Y) * (-1);
@@ -450,7 +450,7 @@ public void Process()
                     tempVelocities.Add(currentVelocity);
                     tempPositions.Add(currentPosition);
 
-                    currentIteration++;
+                    particleIndex++;
                 }
             }
         }
@@ -461,12 +461,12 @@ Our process function is complete, now we have the updated values for all the par
 ```c#
 public void Update()
         {
-            int currentIteration = 0;
+            int particleIndex = 0;
             foreach (Particle particle in Particles)
             {
-                particle.Position = tempPositions[currentIteration];
-                particle.Velocity = tempVelocities[currentIteration];
-                currentIteration++;
+                particle.Position = tempPositions[particleIndex];
+                particle.Velocity = tempVelocities[particleIndex];
+                particleIndex++;
             }
         }
 ```
