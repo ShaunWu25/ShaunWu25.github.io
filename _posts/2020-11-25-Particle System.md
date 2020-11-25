@@ -531,7 +531,7 @@ private void RunScript(List<Curve> curves, List<Point3d> anchorPts, double mass,
 
 ![image](/assets/2011_ParticleSystem/201117_02.gif) | ![image](/assets/2011_ParticleSystem/201117_01.gif)
 
-This kind of concludes the underlying principle of particle system. There are plenty of interesting applications that can be further developed based on particle system logic. One example in th architectural application is planarisation when it comes to panalise complex surfaces, which commonly having difficulty to fabricate doubly curved facade panels out of low-stretchable materials, such as timber or glass. 
+This kind of concludes the underlying principle of particle system. There are plenty of interesting applications that can be further developed based on particle system logic. One example in the architectural application is planarisation when it comes to panalise large doubly-curved surfaces, which commonly having difficulty to fabricate doubly curved facade panels out of low-stretchable materials, such as timber or glass. 
  
 
 [RH]: https://www.rhino3d.com/
