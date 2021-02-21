@@ -9,8 +9,8 @@ permalink: /publications/
 Nov 2020
 Journal/ [Construction Printing Technology][CPT] CPT 4.20 Page 34 - 37
 
-[![image](/assets/publication/BucklingSimulation_01.jpeg)](/assets/publication/BucklingSimulation_01.jpg)
-[![image](/assets/publication/BucklingSimulation_02.jpeg)](/assets/publication/BucklingSimulation_02.jpg)
+[![image](/assets/publication/BucklingSimulation_01.jpg)](/assets/publication/BucklingSimulation_01.jpg)
+[![image](/assets/publication/BucklingSimulation_02.jpg)](/assets/publication/BucklingSimulation_02.jpg)
 
 -----
 
