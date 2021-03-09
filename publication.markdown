@@ -14,7 +14,7 @@ Journal/ [Construction Printing Technology][CPT] CPT 4.20 Page 34 - 37
 
 -----
 
-# Digital Constuction and Buckling Simulation
+# Digital Construction and Buckling Simulation
 May 2020
 Webinar/ [Karamba][KABA]
 
