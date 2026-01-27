@@ -7,7 +7,7 @@ image: /assets/2509_NonPlanarRobotic3DPrinting/Frame_00150.bmp
 tags: 
 ---
 
-![image](/assets/2509_NonPlanarRobotic3DPrinting/231027_non planar+tilt.gif) | ![image](/assets/2509_NonPlanarRobotic3DPrinting/pot.JPG)
+![image](/assets/2509_NonPlanarRobotic3DPrinting/231027_non planar+tilt.gif) | ![image](/assets/2509_NonPlanarRobotic3DPrinting/pot.jpg)
 
 Advancing Structural Integrity: 7-Axis Non-Planar Slicing for 3D Concrete Printing
 In the world of 3D Concrete Printing (3DCP), we are often bound by the "2.5D" vertical straight up, nature of additive manufacturing. Traditional slicing algorithms decompose complex geometries into horizontal layers, which while effective for simple vertical forms but it presents significant structural and aesthetic limitations when dealing with complex curvature.
@@ -40,7 +40,7 @@ I am proud that this non-planar slicing tool has been put to the test through a 
 
 SCG has utilized this plugin to push the boundaries of what is possible in the built environment, moving beyond simple walls to produce highly sophisticated 3D concrete printed objects such as bridges, urban furnture.
 
-![image](/assets/2509_NonPlanarRobotic3DPrinting/SCG bridge.JPG) |  ![image](/assets/2509_NonPlanarRobotic3DPrinting/WhatsApp.JPG)
+![image](/assets/2509_NonPlanarRobotic3DPrinting/SCG bridge.jpg) |  ![image](/assets/2509_NonPlanarRobotic3DPrinting/WhatsApp.jpeg)
 
 
 [SCG]: https://scginternational.com/construction-tech/3d-printing/
