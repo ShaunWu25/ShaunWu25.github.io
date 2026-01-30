@@ -20,9 +20,9 @@ He masters complex geometry, specialising in the optimisation and rationalisatio
 
 In 2013, he worked as a researcher at the [Digital Design & Fabrication LAB (CCC Lab)][CCCLAB], Dept. of Architecture, Tamkang University under the supervision of Professor [Chen Chen-Cheng][CCC].
 
-Currently, he works at [Witteveen+Bos][WB] as a Computational Design Specialist within [Digital Construction Group][DCG] based in Singapore. He is responsible to develop advanced computational methonds for robotics, structural analysis, and form-finding designs. He is involved in various innovative research programs and commercial projects related to large-scale 3D concrete printing and robotic applications.
+Currently, he works at [Witteveen+Bos][WB] as Project Leader within [Digital Construction Group][DCG] based in Singapore. He is responsible to develop advanced computational methonds for robotics, structural analysis, and form-finding designs. He is involved in various innovative research programs and commercial projects related to large-scale 3D concrete printing and robotic applications.
 
-Interests/Specialities: Digital Fabrication, Programming, Structural Design, Architectural Design Research, Additive Manufacturing, 3D Concrete Printing, Robotic Application (ABB, KUKA, UR), Computational Design, Material Research, Complex Geometry Optimisation & Rationalisation. 
+Interests/Specialities: Digital Fabrication, Computational Design, Programming, Structural Design, Architectural Design Research, Additive Manufacturing, 3D Concrete Printing, Robotic Application (ABB, KUKA, UR, Gantry), Material Research, Complex Geometry Optimisation & Rationalisation. 
 
 -----
 
@@ -33,10 +33,7 @@ Interests/Specialities: Digital Fabrication, Programming, Structural Design, Arc
 
 -----
 
-# License
-All the contents shared at **_shaunwu25.github.io_**, including blog posts, images, codes and other assets are licensed under [CC-BY-SA 4.0][CBA].
-
-Last modified on Sunday, March 8th, 2020
+Last modified on Friday, 30th January, 2026
 
 [MASDFab]: https://www.masdfab.com/
 [GKR]: https://gramaziokohler.arch.ethz.ch/web/e/forschung/index.html
@@ -45,9 +42,9 @@ Last modified on Sunday, March 8th, 2020
 [CCC]: http://www.arch.tku.edu.tw/zh-tw/department/teachers/?recordId=245#prettyPhoto
 [CCCLAB]: https://www.facebook.com/digitalaieou/
 [WB]: https://www.witteveenbos.com/
-[DCG]: https://digitalconstruction.witteveenbos.com/
+[DCG]: https://www.witteveenbos.com/digital-solutions/3d-concrete-printing
 [LI]: https://www.linkedin.com/in/shaun-wu/
 [GH]: https://github.com/ShaunWu25
 [CBA]: https://creativecommons.org/licenses/by-sa/4.0/
 
-[cv]:{{ site.url }}/assets/about/CV_ShaunWu.pdf
+[cv]:{{ site.url }}/assets/about/2025-12-01_SHAUN WU CV.pdf
