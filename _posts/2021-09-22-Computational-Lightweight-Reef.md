@@ -22,7 +22,7 @@ Coral transplantation is a challenging and expensive job. For coral transplantat
 - Center cavity is designed for mechanical anchoring.
 - A natural growth simulation is programmed to control design parameters with variation.
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/NTwHJ5xeUKY?si=FG7O5I6dnBDPD0Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="315" src="https://www.youtube.com/embed/NTwHJ5xeUKY?si=FG7O5I6dnBDPD0Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Growth simulation
 - Growth simulation is programmed to simulate coral’s natural growth pattern.
@@ -30,7 +30,7 @@ Coral transplantation is a challenging and expensive job. For coral transplantat
 - It allows for mass-customization. All tiles are different but in control under one design principle.
 - The pattern is tight and packed but no overlapping.
 
-<iframe width="640" height="480" src="https://www.youtube.com/embed/PYG9_R7_qnA?si=tYyeLs5H-JFpJJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="315" src="https://www.youtube.com/embed/PYG9_R7_qnA?si=tYyeLs5H-JFpJJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ![image](/assets/2109_3DCPComputationalReef/IMG_6831.JPG) | ![image](/assets/2109_3DCPComputationalReef/Picture11.jpg)
 
