@@ -32,12 +32,15 @@ Coral transplantation is a challenging and expensive job. For coral transplantat
 
 <iframe width="640" height="315" src="https://www.youtube.com/embed/PYG9_R7_qnA?si=tYyeLs5H-JFpJJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-![image](/assets/2109_3DCPComputationalReef/IMG_6831.JPG) | ![image](/assets/2109_3DCPComputationalReef/Picture11.jpg)
-
 ## 3D Concrete Printed
 - Each tile is fabricated by 3D concrete printing technology.
 - Each tile takes 3 mins to complete the print.
 - Each tile weights 25kg printed in 5 layers.
+
+<div style="display: flex; justify-content: space-around; align-items: center;">
+  <img src="/assets/2109_3DCPComputationalReef/IMG_6831.JPG" style="width: 48%; margin: 1%;">
+  <img src="/assets/2109_3DCPComputationalReef/Picture11.jpg" style="width: 48%; margin: 1%;">
+</div>
 
 ## Success factors
 - Eight unique 3D concrete printed tiles were designed and printed in concrete. Coral fragments were attached to these units and marine animals hid in the grooves and cavities.

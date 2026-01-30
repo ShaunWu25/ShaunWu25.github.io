@@ -30,7 +30,7 @@ To support this iterative development process, we developed an automated paramet
 
 <iframe width="640" height="315" src="https://www.youtube.com/embed/_Omw-bfuX0U?si=d5CcP9zg90ONEFca" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The development of this parametric bridge model was featured in the Digitalisation Section of the Dutch journal Cement[C]. The article was authored by Witteveen+Bos colleague Rayann Ajouz, who was named the 2025 Young Structural Engineer of the Year in the Netherlands.
+The development of this parametric bridge model was featured in the Digitalisation Section of the Dutch journal [Cement][C]. The article was authored by Witteveen+Bos colleague Rayann Ajouz, who was named the 2025 Young Structural Engineer of the Year in the Netherlands.
 
 This project represents a critical step toward mainstream adoption of 3D concrete printing for structural infrastructure in Singapore. One step closer moving from experimental 3DCP demonstrations to engineered, code-ready, permanent assets.
 
