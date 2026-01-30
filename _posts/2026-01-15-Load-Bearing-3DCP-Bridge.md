@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Load-Bearing 3DCP Bridge"
+title:  "Load-Bearing 3D Printed Bridge"
 date:   2026-01-15 00:00:00 +0100
 categories: 
 image: /assets/2601_SG3DCPBridge/250714_Bridge.png
@@ -28,7 +28,7 @@ An extensive QA/QC framework has been established to ensure consistent quality a
 ## Parametric Modelling
 To support this iterative development process, we developed an automated parametric bridge model. This model dynamically accounts for cross-section changes and allows the bridge design to be updated rapidly as new insights emerge from material development and fabrication trials. The benefit of this design approach is flexibility: even at the later stages of design, parameters can be adjusted and a fully updated design can be generated automatically. This supports tight integration between material development, fabrication constraints, and structural design.
 
-<div class="video"> <figure> <iframe width="740" height="480" src="//youtu.be/_Omw-bfuX0U" frameborder="0" allowfullscreen></iframe> </figure> </div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_Omw-bfuX0U?si=d5CcP9zg90ONEFca" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 This project represents a critical step toward mainstream adoption of 3D concrete printing for structural infrastructure in Singapore. One step closer moving from experimental 3DCP demonstrations to engineered, code-ready, permanent assets.
 
