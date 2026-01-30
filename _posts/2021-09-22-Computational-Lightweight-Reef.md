@@ -14,7 +14,7 @@ This post is about the development of lightweight artifical coral reef attachmen
 ## Why lightweight artificial coral reef unit?
 Coral transplantation is a challenging and expensive job. For coral transplantation, concrete or metal structures can be used on which coral fragments can be placed. The foundations are heavy and large and it requires underwater operations that are labour-intensive and logistically demanding. We design, engineering, printing of 3D concrete printed tiles with the aim of stimulating coral reef growth and improving biodiversity.
 
-![image](/assets/2109_3DCPComputationalReef/Picture12.png) | ![image](/assets/2109_3DCPComputationalReef/Picture1.gif)
+![image](/assets/2109_3DCPComputationalReef/Picture12.png) | ![image](/assets/2109_3DCPComputationalReef/Picture4.gif)
 
 ## Design approach
 - Corals need other marine animals to live and grow. Therefore, the design must contain grooves and cavities, where marine animals can hide from predators and coexist with the corals placed on the units. 
@@ -22,9 +22,7 @@ Coral transplantation is a challenging and expensive job. For coral transplantat
 - Center cavity is designed for mechanical anchoring.
 - A natural growth simulation is programmed to control design parameters with variation.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PYG9_R7_qnA?si=tYyeLs5H-JFpJJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NTwHJ5xeUKY?si=FG7O5I6dnBDPD0Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/NTwHJ5xeUKY?si=FG7O5I6dnBDPD0Lg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Growth simulation
 - Growth simulation is programmed to simulate coral’s natural growth pattern.
@@ -32,7 +30,9 @@ Coral transplantation is a challenging and expensive job. For coral transplantat
 - It allows for mass-customization. All tiles are different but in control under one design principle.
 - The pattern is tight and packed but no overlapping.
 
-![image](/assets/2109_3DCPComputationalReef/IMG_6831.jpg) | ![image](/assets/2109_3DCPComputationalReef/Picture11.jpg)
+<iframe width="640" height="480" src="https://www.youtube.com/embed/PYG9_R7_qnA?si=tYyeLs5H-JFpJJyv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+![image](/assets/2109_3DCPComputationalReef/IMG_6831.JPG) | ![image](/assets/2109_3DCPComputationalReef/Picture11.jpg)
 
 ## 3D Concrete Printed
 - Each tile is fabricated by 3D concrete printing technology.

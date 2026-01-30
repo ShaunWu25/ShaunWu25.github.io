@@ -9,7 +9,7 @@ tags:
 
 ![image](/assets/2509_NonPlanarRobotic3DPrinting/231027_non planar+tilt.gif) | ![image](/assets/2509_NonPlanarRobotic3DPrinting/pot.jpg)
 
-Advancing Structural Integrity: 7-Axis Non-Planar Slicing for 3D Concrete Printing
+## Advancing Structural Integrity: 7-Axis Non-Planar Slicing for 3D Concrete Printing
 In the world of 3D Concrete Printing (3DCP), we are often bound by the "2.5D" vertical straight up, nature of additive manufacturing. Traditional slicing algorithms decompose complex geometries into horizontal layers, which while effective for simple vertical forms but it presents significant structural and aesthetic limitations when dealing with complex curvature.
 
 This post is about to share the development on a new Grasshopper plugin designed to overcome these constraints. By leveraging a 7-axis robotic setup (a KUKA robotis arm mounted on a linear track), this development focuses on Non-Planar Slicing specifically designed for the demands of structural 3DCP concrete applications.
