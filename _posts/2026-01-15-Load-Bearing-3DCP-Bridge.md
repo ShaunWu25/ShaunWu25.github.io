@@ -3,11 +3,11 @@ layout: post
 title:  "Load-Bearing 3DCP Bridge"
 date:   2026-01-15 00:00:00 +0100
 categories: 
-image: /assets/2601_SG3DCPBridge/250714_Bridge
+image: /assets/2601_SG3DCPBridge/250714_Bridge.png
 tags: 
 ---
 
-![image](/assets/2601_SG3DCPBridge/250714_Bridge)
+![image](/assets/2601_SG3DCPBridge/250714_Bridge.png)
 
 ![image](/assets/2601_SG3DCPBridge/04.jpg) | ![image](/assets/2601_SG3DCPBridge/05.jpg)
 
