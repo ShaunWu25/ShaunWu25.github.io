@@ -34,6 +34,14 @@ The development of this parametric bridge model was featured in the Digitalisati
 
 This project represents a critical step toward mainstream adoption of 3D concrete printing for structural infrastructure in Singapore. One step closer moving from experimental 3DCP demonstrations to engineered, code-ready, permanent assets.
 
+## Design-by-Testing
+Given the current lack of structural codes for 3DCP, a design-by-testing approach was adopted. Scaled-model load testing served as the primary means of verifying that the bridge satisfies its design requirements and logistic trials.
+
+![image](/assets/2601_SG3DCPBridge/testing.jpg) 
+
+This project is witnessed by [GOH KOK HUN][CKH], LTA Group Director in INFRASTRUCTURE DESIGN & ENGINEERING. It completed assembly of the model for the first 3D concrete printed bridge in Singapore. 
+
 ----
 
 [C]: https://www.cementonline.nl/article/16505/YjliMzJjZWY0ODkwZDFlNjY2MzU4MGMzOWE1ZjczOWY=
+[CKH]: https://www.linkedin.com/feed/update/urn:li:activity:7425715656014303232/?originTrackingId=QYGHxybLzqunn0rZVWdXAA%3D%3D
